@@ -5,16 +5,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "OBSIDIUM ASCEND — Creator Systems Agency",
+    default: "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio",
     template: "%s",
   },
   description:
-    "Premium creator systems agency for stream design, OBS setup, websites, advertising launches, AI production, automation and custom software.",
+    "Premium black-label creator systems studio for stream identity, motion assets, websites, campaigns, automation and custom software.",
   applicationName: "OBSIDIUM ASCEND",
   keywords: [
     "OBSIDIUM ASCEND",
-    "creator systems agency",
-    "stream design",
+    "black-label motion studio",
+    "creator systems studio",
+    "stream identity",
     "OBS setup",
     "Twitch overlays",
     "Discord design",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   creator: "OBSIDIUM ASCEND",
   metadataBase: new URL("https://obsidium-ascend.vercel.app"),
   openGraph: {
-    title: "OBSIDIUM ASCEND — Creator Systems Agency",
+    title: "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio",
     description:
-      "Premium creator systems for stream design, OBS setup, websites, advertising launches, AI production, automation and custom software.",
+      "Premium creator systems for stream identity, motion assets, websites, campaigns, automation and custom software.",
     siteName: "OBSIDIUM ASCEND",
     type: "website",
     locale: "en_US",
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OBSIDIUM ASCEND — Creator Systems Agency",
+    title: "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio",
     description:
-      "Premium creator systems agency for stream design, OBS setup, websites, AI production, automation and custom software.",
+      "Premium creator systems studio for stream identity, motion assets, websites, automation and custom software.",
   },
 };
 

@@ -1,185 +1,141 @@
 "use client";
 
-import { Float, Html, Stars } from "@react-three/drei";
+import { Edges, Float } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import type { Group, Mesh } from "three";
 import { MathUtils } from "three";
 
-type AscendSceneProps = {
-  labels: readonly string[];
-};
-
-const labelPositions: Array<[number, number, number]> = [
-  [0.08, 1.42, 0.2],
-  [2.5, 1.14, 0.28],
-  [0.04, -0.18, 0.24],
-  [2.58, -0.3, 0.28],
-  [0.6, -1.64, 0.34],
-  [2.42, -1.52, 0.34],
-];
-
-function ReactorLabels({ labels }: AscendSceneProps) {
-  return (
-    <>
-      {labels.map((label, index) => (
-        <Html
-          center
-          className="reactor-label"
-          distanceFactor={7.5}
-          key={label}
-          position={labelPositions[index] ?? [0, 0, 0]}
-        >
-          <span>{label}</span>
-        </Html>
-      ))}
-    </>
-  );
-}
-
-function ObsidianCore({ labels }: AscendSceneProps) {
+function ObsidianMonolith() {
   const group = useRef<Group>(null);
-  const crystal = useRef<Mesh>(null);
+  const monolith = useRef<Mesh>(null);
+  const halo = useRef<Mesh>(null);
 
   useFrame((state, delta) => {
     if (!group.current) {
       return;
     }
 
-    const baseX = state.viewport.width > 7 ? 1.02 : 0;
-
-    group.current.rotation.y += delta * 0.18;
+    const desktopOffset = state.viewport.width > 7 ? 1.2 : 0;
+    group.current.rotation.y += delta * 0.045;
     group.current.rotation.x = MathUtils.lerp(
       group.current.rotation.x,
-      state.pointer.y * 0.22,
-      0.045,
+      state.pointer.y * 0.11,
+      0.035,
     );
     group.current.position.x = MathUtils.lerp(
       group.current.position.x,
-      baseX + state.pointer.x * 0.22,
+      desktopOffset + state.pointer.x * 0.18,
       0.04,
     );
     group.current.position.y = MathUtils.lerp(
       group.current.position.y,
-      state.pointer.y * 0.1,
+      state.pointer.y * 0.08,
       0.04,
     );
 
-    if (crystal.current) {
-      crystal.current.rotation.z -= delta * 0.08;
+    if (monolith.current) {
+      monolith.current.rotation.z = MathUtils.lerp(
+        monolith.current.rotation.z,
+        state.pointer.x * 0.025,
+        0.04,
+      );
+    }
+
+    if (halo.current) {
+      halo.current.rotation.z -= delta * 0.08;
     }
   });
 
   return (
-    <Float floatIntensity={1.1} rotationIntensity={0.18} speed={1.05}>
+    <Float floatIntensity={0.45} rotationIntensity={0.08} speed={0.65}>
       <group ref={group}>
-        <mesh scale={1.85}>
-          <sphereGeometry args={[1, 64, 64]} />
+        <mesh position={[0, -1.68, -0.22]} rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[1.42, 0.008, 10, 144]} />
+          <meshStandardMaterial
+            color="#6f42d8"
+            emissive="#6f42d8"
+            emissiveIntensity={0.44}
+            metalness={0.65}
+            roughness={0.22}
+          />
+        </mesh>
+
+        <mesh
+          ref={halo}
+          position={[0.08, -1.68, -0.24]}
+          rotation={[Math.PI / 2, 0.06, 0.12]}
+        >
+          <torusGeometry args={[1.94, 0.005, 8, 168]} />
+          <meshStandardMaterial
+            color="#b7bbc4"
+            emissive="#737989"
+            emissiveIntensity={0.12}
+            metalness={0.86}
+            roughness={0.18}
+          />
+        </mesh>
+
+        <mesh
+          ref={monolith}
+          castShadow
+          position={[0, 0.04, 0]}
+          rotation={[0.04, 0.2, -0.015]}
+          scale={[1.02, 3.34, 0.58]}
+        >
+          <boxGeometry args={[1, 1, 1, 4, 10, 4]} />
+          <meshPhysicalMaterial
+            clearcoat={0.72}
+            clearcoatRoughness={0.28}
+            color="#040407"
+            emissive="#090713"
+            emissiveIntensity={0.5}
+            metalness={0.82}
+            roughness={0.34}
+          />
+          <Edges color="#9b93b7" scale={1.006} threshold={18} />
+        </mesh>
+
+        <mesh position={[0.18, 0.12, 0.04]} scale={[0.94, 3.12, 0.61]}>
+          <boxGeometry args={[1, 1, 1]} />
           <meshBasicMaterial
-            color="#8f4dff"
+            color="#7c4dff"
             depthWrite={false}
-            opacity={0.08}
+            opacity={0.045}
             transparent
           />
         </mesh>
 
-        <mesh ref={crystal}>
-          <icosahedronGeometry args={[1.08, 2]} />
-          <meshStandardMaterial
-            color="#07070a"
-            emissive="#141025"
-            emissiveIntensity={0.8}
-            metalness={0.94}
-            roughness={0.18}
+        <mesh position={[-0.12, 0.1, -0.08]} scale={[1.28, 3.72, 0.72]}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshBasicMaterial
+            color="#0fb8d4"
+            depthWrite={false}
+            opacity={0.022}
+            transparent
           />
         </mesh>
-
-        <mesh scale={1.14}>
-          <icosahedronGeometry args={[1.08, 2]} />
-          <meshStandardMaterial
-            color="#c9d5df"
-            emissive="#22d3ee"
-            emissiveIntensity={0.16}
-            metalness={0.8}
-            roughness={0.24}
-            wireframe
-          />
-        </mesh>
-
-        <mesh rotation={[Math.PI / 2, 0, 0]}>
-          <torusGeometry args={[1.78, 0.014, 12, 160]} />
-          <meshStandardMaterial
-            color="#22d3ee"
-            emissive="#22d3ee"
-            emissiveIntensity={0.85}
-            metalness={0.7}
-            roughness={0.16}
-          />
-        </mesh>
-
-        <mesh rotation={[0.54, 0.1, -0.38]}>
-          <torusGeometry args={[2.28, 0.012, 12, 160]} />
-          <meshStandardMaterial
-            color="#8f4dff"
-            emissive="#8f4dff"
-            emissiveIntensity={0.72}
-            metalness={0.68}
-            roughness={0.18}
-          />
-        </mesh>
-
-        <mesh rotation={[1.05, -0.26, 0.62]}>
-          <torusGeometry args={[2.86, 0.007, 12, 160]} />
-          <meshStandardMaterial
-            color="#66ff99"
-            emissive="#66ff99"
-            emissiveIntensity={0.28}
-            metalness={0.55}
-            roughness={0.28}
-          />
-        </mesh>
-
-        <mesh rotation={[0.1, -0.2, 0.86]}>
-          <torusGeometry args={[3.22, 0.0045, 8, 192]} />
-          <meshStandardMaterial
-            color="#d9e2ea"
-            emissive="#9aa8b4"
-            emissiveIntensity={0.18}
-            metalness={0.92}
-            roughness={0.12}
-          />
-        </mesh>
-
-        <ReactorLabels labels={labels} />
       </group>
     </Float>
   );
 }
 
-export function AscendScene({ labels }: AscendSceneProps) {
+export function AscendScene() {
   return (
     <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+      <div className="monolith-fallback" />
       <Canvas
-        camera={{ fov: 42, position: [0, 0.18, 7.25] }}
-        dpr={[1, 1.75]}
+        camera={{ fov: 38, position: [0, 0.04, 7.4] }}
+        dpr={[1, 1.65]}
         gl={{ alpha: true, antialias: true, powerPreference: "high-performance" }}
       >
-        <fog attach="fog" args={["#050507", 7, 18]} />
-        <ambientLight intensity={0.42} />
-        <directionalLight color="#e6edf4" intensity={1.24} position={[3, 4, 5]} />
-        <pointLight color="#22d3ee" intensity={24} position={[-3.4, 1.8, 3]} />
-        <pointLight color="#8f4dff" intensity={18} position={[3.4, 1.4, 4]} />
-        <pointLight color="#66ff99" intensity={7} position={[0, -3.2, 2.6]} />
-        <Stars
-          count={900}
-          depth={19}
-          factor={2.45}
-          fade
-          radius={35}
-          saturation={0.4}
-          speed={0.16}
-        />
-        <ObsidianCore labels={labels} />
+        <fog attach="fog" args={["#030304", 6.5, 15]} />
+        <ambientLight intensity={0.28} />
+        <directionalLight color="#eff0f4" intensity={1.55} position={[-3, 4, 5]} />
+        <pointLight color="#6f42d8" intensity={16} position={[2.9, 1.4, 4.2]} />
+        <pointLight color="#0fb8d4" intensity={5.5} position={[-3.6, -0.8, 3.4]} />
+        <pointLight color="#ffffff" intensity={3} position={[0, 3.8, 2.2]} />
+        <ObsidianMonolith />
       </Canvas>
     </div>
   );
