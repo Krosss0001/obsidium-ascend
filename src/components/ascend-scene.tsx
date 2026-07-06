@@ -16,21 +16,21 @@ function ObsidianMonolith() {
       return;
     }
 
-    const desktopOffset = state.viewport.width > 7 ? 1.2 : 0;
-    group.current.rotation.y += delta * 0.045;
+    const desktopOffset = state.viewport.width > 7 ? 1.34 : 0.08;
+    group.current.rotation.y += delta * 0.032;
     group.current.rotation.x = MathUtils.lerp(
       group.current.rotation.x,
-      state.pointer.y * 0.11,
+      state.pointer.y * 0.08,
       0.035,
     );
     group.current.position.x = MathUtils.lerp(
       group.current.position.x,
-      desktopOffset + state.pointer.x * 0.18,
+      desktopOffset + state.pointer.x * 0.12,
       0.04,
     );
     group.current.position.y = MathUtils.lerp(
       group.current.position.y,
-      state.pointer.y * 0.08,
+      state.pointer.y * 0.055,
       0.04,
     );
 
@@ -55,7 +55,7 @@ function ObsidianMonolith() {
           <meshStandardMaterial
             color="#6f42d8"
             emissive="#6f42d8"
-            emissiveIntensity={0.44}
+            emissiveIntensity={0.3}
             metalness={0.65}
             roughness={0.22}
           />
@@ -68,9 +68,9 @@ function ObsidianMonolith() {
         >
           <torusGeometry args={[1.94, 0.005, 8, 168]} />
           <meshStandardMaterial
-            color="#b7bbc4"
+            color="#c4c5cb"
             emissive="#737989"
-            emissiveIntensity={0.12}
+            emissiveIntensity={0.08}
             metalness={0.86}
             roughness={0.18}
           />
@@ -81,7 +81,7 @@ function ObsidianMonolith() {
           castShadow
           position={[0, 0.04, 0]}
           rotation={[0.04, 0.2, -0.015]}
-          scale={[1.02, 3.34, 0.58]}
+          scale={[1.08, 3.52, 0.56]}
         >
           <boxGeometry args={[1, 1, 1, 4, 10, 4]} />
           <meshPhysicalMaterial
@@ -89,11 +89,11 @@ function ObsidianMonolith() {
             clearcoatRoughness={0.28}
             color="#040407"
             emissive="#090713"
-            emissiveIntensity={0.5}
+            emissiveIntensity={0.36}
             metalness={0.82}
             roughness={0.34}
           />
-          <Edges color="#9b93b7" scale={1.006} threshold={18} />
+          <Edges color="#a4a0b5" scale={1.006} threshold={18} />
         </mesh>
 
         <mesh position={[0.18, 0.12, 0.04]} scale={[0.94, 3.12, 0.61]}>
@@ -101,7 +101,7 @@ function ObsidianMonolith() {
           <meshBasicMaterial
             color="#7c4dff"
             depthWrite={false}
-            opacity={0.045}
+            opacity={0.032}
             transparent
           />
         </mesh>
@@ -111,7 +111,7 @@ function ObsidianMonolith() {
           <meshBasicMaterial
             color="#0fb8d4"
             depthWrite={false}
-            opacity={0.022}
+            opacity={0.012}
             transparent
           />
         </mesh>
@@ -130,11 +130,11 @@ export function AscendScene() {
         gl={{ alpha: true, antialias: true, powerPreference: "high-performance" }}
       >
         <fog attach="fog" args={["#030304", 6.5, 15]} />
-        <ambientLight intensity={0.28} />
-        <directionalLight color="#eff0f4" intensity={1.55} position={[-3, 4, 5]} />
-        <pointLight color="#6f42d8" intensity={16} position={[2.9, 1.4, 4.2]} />
-        <pointLight color="#0fb8d4" intensity={5.5} position={[-3.6, -0.8, 3.4]} />
-        <pointLight color="#ffffff" intensity={3} position={[0, 3.8, 2.2]} />
+        <ambientLight intensity={0.24} />
+        <directionalLight color="#eff0f4" intensity={1.38} position={[-3, 4, 5]} />
+        <pointLight color="#6f42d8" intensity={11} position={[2.9, 1.4, 4.2]} />
+        <pointLight color="#7bc8d7" intensity={2.2} position={[-3.6, -0.8, 3.4]} />
+        <pointLight color="#ffffff" intensity={2.4} position={[0, 3.8, 2.2]} />
         <ObsidianMonolith />
       </Canvas>
     </div>

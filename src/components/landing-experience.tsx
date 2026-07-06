@@ -103,8 +103,10 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
   if (kind === "timeline") {
     return (
       <div className="mockup-canvas motion-board" aria-hidden>
+        <div className="mockup-label">Motion Cut / 024</div>
         <div className="motion-preview">
           <Play className="size-5" />
+          <span />
         </div>
         <div className="timeline-rows">
           <span />
@@ -112,6 +114,7 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
           <span />
         </div>
         <div className="timeline-ruler" />
+        <div className="timeline-timecode">00:14:08:21</div>
       </div>
     );
   }
@@ -119,12 +122,19 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
   if (kind === "web" || kind === "clan") {
     return (
       <div className="mockup-canvas web-frame" aria-hidden>
+        <div className="mockup-label">
+          {kind === "clan" ? "Recruitment Surface" : "Launch Surface"}
+        </div>
         <div className="browser-bar">
           <Circle className="size-2.5" />
           <Circle className="size-2.5" />
           <Circle className="size-2.5" />
         </div>
         <div className="web-hero" />
+        <div className="web-type">
+          <span />
+          <span />
+        </div>
         <div className="web-grid">
           <span />
           <span />
@@ -137,6 +147,7 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
   if (kind === "automation" || kind === "dashboard") {
     return (
       <div className="mockup-canvas automation-board" aria-hidden>
+        <div className="mockup-label">Control Layer</div>
         <div className="metric-stack">
           <span />
           <span />
@@ -148,15 +159,20 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
           <i />
           <i />
         </div>
+        <div className="automation-readout">SYSTEM STATUS / DIRECTED</div>
       </div>
     );
   }
 
   return (
     <div className="mockup-canvas obs-stack" aria-hidden>
+      <div className="mockup-label">
+        {kind === "stream" ? "Channel Identity" : "Visual Command"}
+      </div>
       <div className="obs-main">
         <Square className="size-6" />
       </div>
+      <div className="obs-frame-name">SCENE / BLACK INTRO</div>
       <div className="obs-layers">
         <span />
         <span />
@@ -170,17 +186,26 @@ function SystemMockup({ kind }: { kind: MockupKind }) {
   );
 }
 
-function FilmFrame({ index, label }: { index: number; label: string }) {
+function FilmFrame({
+  frame,
+  index,
+}: {
+  frame: Dictionary["showreel"]["frames"][number];
+  index: number;
+}) {
   return (
     <Reveal delay={index * 0.04}>
       <article className="showreel-frame">
         <div className="frame-perf frame-perf-top" />
         <div className="frame-preview">
-          <span className="frame-number">{String(index + 1).padStart(2, "0")}</span>
+          <span className="frame-number">{frame.number}</span>
           <span className="frame-line" />
           <Layers3 className="size-5" />
         </div>
-        <p>{label}</p>
+        <div className="frame-caption">
+          <p>{frame.label}</p>
+          <span>{frame.text}</span>
+        </div>
         <div className="frame-perf frame-perf-bottom" />
       </article>
     </Reveal>
@@ -317,7 +342,19 @@ export function LandingExperience({
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="eyebrow">{dictionary.hero.eyebrow}</p>
-            <h1 className="display-title">{dictionary.hero.title}</h1>
+            <h1 className="display-title" aria-label={dictionary.hero.title}>
+              {dictionary.hero.titleParts.map((part, index) => (
+                <span className="title-line" key={part}>
+                  <span>{part}</span>
+                  {index === 0 ? <i /> : null}
+                </span>
+              ))}
+            </h1>
+            <div className="hero-meta-row" aria-hidden>
+              {dictionary.hero.meta.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
             <p className="hero-headline">{dictionary.hero.headline}</p>
             <p className="hero-subtitle">{dictionary.hero.subtitle}</p>
             <div className="hero-actions">
@@ -335,6 +372,7 @@ export function LandingExperience({
             <div className="studio-code">
               <span>OBSIDIUM / ASCEND</span>
               <p>{dictionary.hero.studioCode}</p>
+              <i />
             </div>
           </Reveal>
         </div>
@@ -375,8 +413,10 @@ export function LandingExperience({
               >
                 <div className="panel-copy">
                   <span className="chapter-number">{panel.number}</span>
+                  <span className="module-kicker">{panel.label}</span>
                   <h3>{panel.title}</h3>
                   <p>{panel.text}</p>
+                  <p className="panel-deliverable">{panel.deliverable}</p>
                   <span className="film-line" />
                 </div>
                 <SystemMockup kind={panel.mockup} />
@@ -395,7 +435,7 @@ export function LandingExperience({
         />
         <div className="showreel-strip">
           {dictionary.showreel.frames.map((frame, index) => (
-            <FilmFrame index={index} key={frame} label={frame} />
+            <FilmFrame frame={frame} index={index} key={frame.number} />
           ))}
         </div>
       </section>
@@ -409,9 +449,10 @@ export function LandingExperience({
         <div className="mission-stack">
           {dictionary.missions.cards.map((mission, index) => (
             <Reveal delay={index * 0.05} key={mission.number}>
-              <article className="mission-panel">
+              <article className={cx("mission-panel", `mission-panel-${mission.mockup}`)}>
                 <div className="mission-index">{mission.number}</div>
                 <div className="mission-content">
+                  <span className="mission-scope">{mission.scope}</span>
                   <h3>{mission.title}</h3>
                   <p>{mission.text}</p>
                   <div className="tag-row">
@@ -419,7 +460,10 @@ export function LandingExperience({
                       <span key={tag}>{tag}</span>
                     ))}
                   </div>
-                  <strong>{mission.outcome}</strong>
+                  <div className="mission-outcome">
+                    <span>{mission.outcomeLabel}</span>
+                    <strong>{mission.outcome}</strong>
+                  </div>
                 </div>
                 <SystemMockup kind={mission.mockup} />
               </article>
@@ -432,9 +476,10 @@ export function LandingExperience({
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:px-12 lg:py-28">
           <Reveal>
             <div className="black-label-copy">
-              <p className="eyebrow">Private Studio</p>
+              <p className="eyebrow">{dictionary.blackLabel.eyebrow}</p>
               <h2>{dictionary.blackLabel.title}</h2>
               <p>{dictionary.blackLabel.text}</p>
+              <p className="black-label-note">{dictionary.blackLabel.note}</p>
               <a className="private-button" href={mailHref}>
                 {dictionary.blackLabel.button}
                 <ArrowUpRight aria-hidden className="size-4" />
@@ -448,7 +493,10 @@ export function LandingExperience({
                 <div className={cx("tier-row", tier.name === "BLACK" && "tier-row-black")}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <h3>{tier.name}</h3>
-                  <p>{tier.text}</p>
+                  <div>
+                    <p>{tier.text}</p>
+                    <small>{tier.detail}</small>
+                  </div>
                 </div>
               </Reveal>
             ))}
