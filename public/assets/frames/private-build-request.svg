@@ -1,0 +1,13 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Private build request dossier</title>
+  <rect width="760" height="560" fill="#030304"/>
+  <rect x="24" y="24" width="712" height="512" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <rect x="54" y="62" width="652" height="72" fill="#070709" stroke="#C6C7CC" stroke-opacity=".18"/>
+  <text x="78" y="104" fill="#F3F1EB" font-family="monospace" font-size="18" letter-spacing="5">PRIVATE BUILD REQUEST</text>
+  <path d="M78 178h212M78 226h282M78 274h244M78 322h302M78 370h180M78 418h260" stroke="#C6C7CC" stroke-opacity=".38"/>
+  <path d="M402 178h250M402 226h202M402 274h252M402 322h174" stroke="#6F42D8" stroke-opacity=".34"/>
+  <rect x="402" y="370" width="250" height="74" stroke="#F3F1EB" stroke-opacity=".13"/>
+  <path d="M424 410h128M424 430h178" stroke="#7BC8D7" stroke-opacity=".25"/>
+  <circle cx="636" cy="96" r="24" stroke="#F3F1EB" stroke-opacity=".26"/>
+  <path d="M624 99c-6 0-10-5-10-13s4-13 10-13 10 5 10 13-4 13-10 13Zm22 0h-7l10-26h7l10 26h-7l-1.5-4.8h-10L646 99Z" fill="#F3F1EB"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">OBSIDIUM ASCEND black label seal</title>
+  <rect width="180" height="180" fill="#030304"/>
+  <circle cx="90" cy="90" r="76" stroke="#F3F1EB" stroke-opacity=".24"/>
+  <circle cx="90" cy="90" r="62" stroke="#6F42D8" stroke-opacity=".28"/>
+  <path d="M90 32v116M32 90h116" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <path d="M62 112c-12.3 0-20.9-9.1-20.9-25s8.6-25 20.9-25 20.9 9.1 20.9 25-8.6 25-20.9 25Zm0-10.8c5.1 0 8.5-4.5 8.5-14.2S67.1 72.8 62 72.8 53.5 77.3 53.5 87s3.4 14.2 8.5 14.2Z" fill="#F3F1EB"/>
+  <path d="M102.6 111h-12l17.3-48h12.5l17.4 48h-12.3l-2.5-7.8h-17.9l-2.5 7.8Zm5.8-18h11.3L114 75.3 108.4 93Z" fill="#F3F1EB"/>
+  <path d="M43 136h94" stroke="#C6C7CC" stroke-opacity=".28"/>
+  <text x="90" y="29" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="8" letter-spacing="3" text-anchor="middle">BLACK LABEL</text>
+  <text x="90" y="153" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="8" letter-spacing="3" text-anchor="middle">PRIVATE SYSTEM</text>
+</svg>

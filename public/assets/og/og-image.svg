@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">OBSIDIUM ASCEND social preview</title>
+  <defs>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(854 302) rotate(90) scale(330 380)">
+      <stop stop-color="#6F42D8" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#030304" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#030304"/>
+  <rect width="1200" height="630" fill="url(#v)"/>
+  <path d="M54 54h1092v522H54z" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <path d="M805 105 990 74l56 64-8 366-211 34-62-68 40-365Z" fill="#040407" stroke="#C6C7CC" stroke-opacity=".42"/>
+  <path d="M990 74 1046 138l-8 366-48-62V74Z" fill="#090914" stroke="#6F42D8" stroke-opacity=".34"/>
+  <text x="86" y="180" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900">OBSIDIUM</text>
+  <text x="86" y="280" fill="#C6C7CC" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900">ASCEND</text>
+  <text x="90" y="342" fill="#C6C7CC" font-family="monospace" font-size="20" letter-spacing="6">BLACK-LABEL MOTION &amp; CREATOR SYSTEMS STUDIO</text>
+  <text x="90" y="426" fill="#F3F1EB" font-family="Arial, sans-serif" font-size="38" font-weight="700">Not a design pack. A cinematic creator system.</text>
+  <path d="M90 492h430" stroke="#6F42D8" stroke-opacity=".54"/>
+  <circle cx="1010" cy="502" r="48" stroke="#F3F1EB" stroke-opacity=".28"/>
+  <path d="M986 510c-11 0-19-8-19-22s8-22 19-22 19 8 19 22-8 22-19 22Zm40 0h-11l16-44h11l16 44h-11l-2-7h-17l-2 7Z" fill="#F3F1EB"/>
+</svg>

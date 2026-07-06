@@ -1,0 +1,19 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Black Label private build dossier</title>
+  <rect width="960" height="640" fill="#020203"/>
+  <rect x="32" y="32" width="896" height="576" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <rect x="64" y="70" width="270" height="402" fill="#050506" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <path d="M92 116h162M92 146h104M92 202h214M92 230h188M92 258h132" stroke="#F3F1EB" stroke-opacity=".35"/>
+  <path d="M92 344h192M92 372h156M92 400h206" stroke="#6F42D8" stroke-opacity=".42"/>
+  <circle cx="258" cy="524" r="42" stroke="#F3F1EB" stroke-opacity=".26"/>
+  <path d="M238 530c-10 0-17-8-17-21s7-21 17-21 17 8 17 21-7 21-17 21Zm0-9c4 0 7-4 7-12s-3-12-7-12-7 4-7 12 3 12 7 12Zm37 8h-10l14-40h10l14 40h-10l-2-7h-14l-2 7Zm4-15h10l-5-15-5 15Z" fill="#F3F1EB"/>
+  <rect x="386" y="70" width="480" height="92" fill="#070709" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <path d="M416 112h172M416 136h98M736 112h86" stroke="#C6C7CC" stroke-opacity=".42"/>
+  <rect x="386" y="202" width="480" height="82" fill="#030304" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <rect x="386" y="316" width="480" height="82" fill="#030304" stroke="#6F42D8" stroke-opacity=".24"/>
+  <rect x="386" y="430" width="480" height="82" fill="#030304" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <path d="M416 246h120M416 360h178M416 474h142" stroke="#F3F1EB" stroke-opacity=".42"/>
+  <path d="M690 244h128M690 358h128M690 472h128" stroke="#7BC8D7" stroke-opacity=".24"/>
+  <path d="M64 536h802" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <text x="64" y="568" fill="#C6C7CC" fill-opacity=".74" font-family="monospace" font-size="14" letter-spacing="5">PRIVATE PRODUCTION FILE / BLACK LABEL BUILD</text>
+</svg>

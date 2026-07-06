@@ -1,0 +1,20 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Launch presence website and campaign system</title>
+  <rect width="900" height="620" fill="#030304"/>
+  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <rect x="78" y="82" width="476" height="342" fill="#070709" stroke="#C6C7CC" stroke-opacity=".18"/>
+  <path d="M78 128h476" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <circle cx="104" cy="106" r="5" fill="#C6C7CC" fill-opacity=".36"/>
+  <circle cx="124" cy="106" r="5" fill="#C6C7CC" fill-opacity=".24"/>
+  <circle cx="144" cy="106" r="5" fill="#6F42D8" fill-opacity=".54"/>
+  <rect x="110" y="162" width="250" height="104" stroke="#6F42D8" stroke-opacity=".3"/>
+  <path d="M110 304h362M110 334h244M110 364h318" stroke="#F3F1EB" stroke-opacity=".34"/>
+  <rect x="594" y="82" width="228" height="96" stroke="#F3F1EB" stroke-opacity=".14"/>
+  <rect x="594" y="208" width="228" height="96" stroke="#6F42D8" stroke-opacity=".24"/>
+  <rect x="594" y="334" width="228" height="90" stroke="#F3F1EB" stroke-opacity=".14"/>
+  <path d="M628 126h124M628 252h148M628 376h104" stroke="#C6C7CC" stroke-opacity=".36"/>
+  <path d="M316 468v48M316 516h392M708 424v92" stroke="#7BC8D7" stroke-opacity=".24"/>
+  <circle cx="316" cy="516" r="5" fill="#F3F1EB"/>
+  <circle cx="708" cy="516" r="5" fill="#6F42D8"/>
+  <text x="78" y="552" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">LAUNCH SURFACE / SITE / CAMPAIGN / COMMUNITY</text>
+</svg>

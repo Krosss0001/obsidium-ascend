@@ -1,20 +1,11 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import gsap from "gsap";
-import {
-  ArrowUpRight,
-  ChevronRight,
-  Circle,
-  Layers3,
-  Menu,
-  Minus,
-  Play,
-  Square,
-  X,
-} from "lucide-react";
+import { ArrowUpRight, ChevronRight, Menu, X } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { Dictionary, Locale } from "@/lib/i18n";
 
@@ -31,9 +22,10 @@ type LandingExperienceProps = {
   locale: Locale;
 };
 
-type MockupKind =
-  | Dictionary["systems"]["panels"][number]["mockup"]
-  | Dictionary["missions"]["cards"][number]["mockup"];
+type VisualAsset = {
+  readonly src: string;
+  readonly alt: string;
+};
 
 function cx(...classes: Array<string | false | null | undefined>) {
   return classes.filter(Boolean).join(" ");
@@ -99,89 +91,26 @@ function ChapterHeading({
   );
 }
 
-function SystemMockup({ kind }: { kind: MockupKind }) {
-  if (kind === "timeline") {
-    return (
-      <div className="mockup-canvas motion-board" aria-hidden>
-        <div className="mockup-label">Motion Cut / 024</div>
-        <div className="motion-preview">
-          <Play className="size-5" />
-          <span />
-        </div>
-        <div className="timeline-rows">
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="timeline-ruler" />
-        <div className="timeline-timecode">00:14:08:21</div>
-      </div>
-    );
-  }
-
-  if (kind === "web" || kind === "clan") {
-    return (
-      <div className="mockup-canvas web-frame" aria-hidden>
-        <div className="mockup-label">
-          {kind === "clan" ? "Recruitment Surface" : "Launch Surface"}
-        </div>
-        <div className="browser-bar">
-          <Circle className="size-2.5" />
-          <Circle className="size-2.5" />
-          <Circle className="size-2.5" />
-        </div>
-        <div className="web-hero" />
-        <div className="web-type">
-          <span />
-          <span />
-        </div>
-        <div className="web-grid">
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>
-    );
-  }
-
-  if (kind === "automation" || kind === "dashboard") {
-    return (
-      <div className="mockup-canvas automation-board" aria-hidden>
-        <div className="mockup-label">Control Layer</div>
-        <div className="metric-stack">
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="node-map">
-          <i />
-          <i />
-          <i />
-          <i />
-        </div>
-        <div className="automation-readout">SYSTEM STATUS / DIRECTED</div>
-      </div>
-    );
-  }
-
+function AssetVisual({
+  visual,
+  className,
+  decorative = false,
+}: {
+  visual: VisualAsset;
+  className?: string;
+  decorative?: boolean;
+}) {
   return (
-    <div className="mockup-canvas obs-stack" aria-hidden>
-      <div className="mockup-label">
-        {kind === "stream" ? "Channel Identity" : "Visual Command"}
-      </div>
-      <div className="obs-main">
-        <Square className="size-6" />
-      </div>
-      <div className="obs-frame-name">SCENE / BLACK INTRO</div>
-      <div className="obs-layers">
-        <span />
-        <span />
-        <span />
-      </div>
-      <div className="obs-console">
-        <Minus className="size-4" />
-        <Minus className="size-4" />
-      </div>
+    <div className={cx("asset-frame", className)}>
+      <Image
+        alt={decorative ? "" : visual.alt}
+        aria-hidden={decorative ? true : undefined}
+        height={640}
+        loading="eager"
+        src={visual.src}
+        unoptimized
+        width={960}
+      />
     </div>
   );
 }
@@ -198,9 +127,15 @@ function FilmFrame({
       <article className="showreel-frame">
         <div className="frame-perf frame-perf-top" />
         <div className="frame-preview">
+          <Image
+            alt={frame.visual.alt}
+            height={320}
+            loading="eager"
+            src={frame.visual.src}
+            unoptimized
+            width={520}
+          />
           <span className="frame-number">{frame.number}</span>
-          <span className="frame-line" />
-          <Layers3 className="size-5" />
         </div>
         <div className="frame-caption">
           <p>{frame.label}</p>
@@ -217,9 +152,9 @@ export function LandingExperience({
   locale,
 }: LandingExperienceProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
   const shouldReduceMotion = useReducedMotion();
-  const mailHref = `mailto:${dictionary.brand.email}?subject=OBSIDIUM%20ASCEND%20Private%20Build`;
 
   useEffect(() => {
     if (!rootRef.current || shouldReduceMotion) {
@@ -258,7 +193,17 @@ export function LandingExperience({
             className="brand-lockup"
             href={`/${locale}`}
           >
-            <span className="brand-mark">{dictionary.brand.mark}</span>
+            <span className="brand-mark">
+              <Image
+                alt=""
+                aria-hidden
+                height={44}
+                loading="eager"
+                src={dictionary.assets.mark}
+                unoptimized
+                width={44}
+              />
+            </span>
             <span className="brand-copy">
               <span>{dictionary.brand.name}</span>
               <small>{dictionary.brand.category}</small>
@@ -333,6 +278,16 @@ export function LandingExperience({
         <div className="grain-layer" />
         <div className="projector-light" />
         <AscendScene />
+        <Image
+          alt=""
+          aria-hidden
+          className="hero-poster-layer"
+          height={860}
+          priority
+          src={dictionary.assets.heroPoster}
+          unoptimized
+          width={640}
+        />
 
         <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-7xl items-end gap-10 px-4 pb-12 pt-28 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-12 lg:pb-16">
           <motion.div
@@ -358,7 +313,7 @@ export function LandingExperience({
             <p className="hero-headline">{dictionary.hero.headline}</p>
             <p className="hero-subtitle">{dictionary.hero.subtitle}</p>
             <div className="hero-actions">
-              <a className="private-button" href={mailHref}>
+              <a className="private-button" href="#contact">
                 {dictionary.hero.primary}
                 <ArrowUpRight aria-hidden className="size-4" />
               </a>
@@ -419,7 +374,10 @@ export function LandingExperience({
                   <p className="panel-deliverable">{panel.deliverable}</p>
                   <span className="film-line" />
                 </div>
-                <SystemMockup kind={panel.mockup} />
+                <AssetVisual
+                  className={cx("system-visual", `system-visual-${panel.mockup}`)}
+                  visual={panel.visual}
+                />
               </article>
             </Reveal>
           ))}
@@ -446,6 +404,9 @@ export function LandingExperience({
           kicker="Missions"
           title={dictionary.missions.title}
         />
+        <Reveal className="mission-note">
+          <p>{dictionary.missions.note}</p>
+        </Reveal>
         <div className="mission-stack">
           {dictionary.missions.cards.map((mission, index) => (
             <Reveal delay={index * 0.05} key={mission.number}>
@@ -465,7 +426,10 @@ export function LandingExperience({
                     <strong>{mission.outcome}</strong>
                   </div>
                 </div>
-                <SystemMockup kind={mission.mockup} />
+                <AssetVisual
+                  className={cx("mission-visual", `mission-visual-${mission.mockup}`)}
+                  visual={mission.visual}
+                />
               </article>
             </Reveal>
           ))}
@@ -480,26 +444,39 @@ export function LandingExperience({
               <h2>{dictionary.blackLabel.title}</h2>
               <p>{dictionary.blackLabel.text}</p>
               <p className="black-label-note">{dictionary.blackLabel.note}</p>
-              <a className="private-button" href={mailHref}>
+              <a className="private-button" href="#contact">
                 {dictionary.blackLabel.button}
                 <ArrowUpRight aria-hidden className="size-4" />
               </a>
             </div>
           </Reveal>
 
-          <div className="tier-list">
-            {dictionary.blackLabel.tiers.map((tier, index) => (
-              <Reveal delay={index * 0.04} key={tier.name}>
-                <div className={cx("tier-row", tier.name === "BLACK" && "tier-row-black")}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{tier.name}</h3>
-                  <div>
-                    <p>{tier.text}</p>
-                    <small>{tier.detail}</small>
+          <div className="black-label-right">
+            <Reveal>
+              <AssetVisual
+                className="black-label-visual"
+                visual={dictionary.blackLabel.visual}
+              />
+            </Reveal>
+            <div className="tier-list">
+              {dictionary.blackLabel.tiers.map((tier, index) => (
+                <Reveal delay={index * 0.04} key={tier.name}>
+                  <div
+                    className={cx(
+                      "tier-row",
+                      tier.name === "BLACK" && "tier-row-black",
+                    )}
+                  >
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <h3>{tier.name}</h3>
+                    <div>
+                      <p>{tier.text}</p>
+                      <small>{tier.detail}</small>
+                    </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -529,13 +506,92 @@ export function LandingExperience({
         <Reveal>
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 lg:px-12 lg:py-28">
             <div className="intake-panel">
-              <p className="eyebrow">{dictionary.brand.category}</p>
-              <h2>{dictionary.contact.headline}</h2>
-              <p>{dictionary.contact.text}</p>
-              <a className="private-button" href={mailHref}>
-                {dictionary.contact.button}
-                <ArrowUpRight aria-hidden className="size-4" />
-              </a>
+              <div className="intake-copy">
+                <div className="intake-seal">
+                  <Image
+                    alt=""
+                    aria-hidden
+                    height={84}
+                    loading="eager"
+                    src={dictionary.assets.seal}
+                    unoptimized
+                    width={84}
+                  />
+                </div>
+                <p className="eyebrow">{dictionary.brand.category}</p>
+                <h2>{dictionary.contact.headline}</h2>
+                <p>{dictionary.contact.text}</p>
+                <AssetVisual
+                  className="contact-visual"
+                  visual={dictionary.contact.visual}
+                />
+              </div>
+
+              <form
+                className="build-form"
+                id="private-build-form"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  setIsFormSubmitted(true);
+                }}
+              >
+                <div className="form-heading">
+                  <span>OBSIDIUM / INTAKE</span>
+                  <h3>{dictionary.contact.form.title}</h3>
+                </div>
+                <div className="form-grid">
+                  {dictionary.contact.form.fields.map((field) => {
+                    const inputId = `build-${field.name}`;
+
+                    if (field.type === "select") {
+                      return (
+                        <label className="field-group" htmlFor={inputId} key={field.name}>
+                          <span>{field.label}</span>
+                          <select defaultValue="" id={inputId} name={field.name} required>
+                            <option disabled value="">
+                              {field.label}
+                            </option>
+                            {dictionary.contact.form.projectTypes.map((type) => (
+                              <option key={type} value={type}>
+                                {type}
+                              </option>
+                            ))}
+                          </select>
+                        </label>
+                      );
+                    }
+
+                    if (field.type === "textarea") {
+                      return (
+                        <label
+                          className="field-group field-group-wide"
+                          htmlFor={inputId}
+                          key={field.name}
+                        >
+                          <span>{field.label}</span>
+                          <textarea id={inputId} name={field.name} required rows={5} />
+                        </label>
+                      );
+                    }
+
+                    return (
+                      <label className="field-group" htmlFor={inputId} key={field.name}>
+                        <span>{field.label}</span>
+                        <input id={inputId} name={field.name} required type={field.type} />
+                      </label>
+                    );
+                  })}
+                </div>
+                <button className="private-button" type="submit">
+                  {dictionary.contact.form.submit}
+                  <ArrowUpRight aria-hidden className="size-4" />
+                </button>
+                {isFormSubmitted ? (
+                  <p className="form-success" role="status">
+                    {dictionary.contact.form.success}
+                  </p>
+                ) : null}
+              </form>
             </div>
           </div>
         </Reveal>
@@ -543,10 +599,22 @@ export function LandingExperience({
 
       <footer className="footer-shell">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-8 lg:grid-cols-[1fr_auto] lg:px-12">
-          <div>
-            <p className="footer-brand">{dictionary.brand.name}</p>
-            <p className="footer-category">{dictionary.footer.category}</p>
-            <p className="footer-line">{dictionary.footer.line}</p>
+          <div className="footer-lockup">
+            <Image
+              alt=""
+              aria-hidden
+              className="footer-mark"
+              height={48}
+              loading="eager"
+              src={dictionary.assets.mark}
+              unoptimized
+              width={48}
+            />
+            <div>
+              <p className="footer-brand">{dictionary.brand.name}</p>
+              <p className="footer-category">{dictionary.footer.category}</p>
+              <p className="footer-line">{dictionary.footer.line}</p>
+            </div>
           </div>
           <nav className="footer-nav" aria-label="Footer navigation">
             {dictionary.footer.links.map((link) => (

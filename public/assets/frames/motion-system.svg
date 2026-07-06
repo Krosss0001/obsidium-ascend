@@ -1,0 +1,18 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Motion production timeline system</title>
+  <rect width="900" height="620" fill="#030304"/>
+  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <rect x="82" y="84" width="736" height="248" fill="#070709" stroke="#C6C7CC" stroke-opacity=".15"/>
+  <path d="M114 208h672M178 116v184M306 116v184M434 116v184M562 116v184M690 116v184" stroke="#F3F1EB" stroke-opacity=".08"/>
+  <path d="M146 232c76-102 154 72 236-16 74-80 150-54 252 28" stroke="#6F42D8" stroke-opacity=".64"/>
+  <circle cx="146" cy="232" r="5" fill="#F3F1EB"/>
+  <circle cx="382" cy="216" r="5" fill="#F3F1EB"/>
+  <circle cx="634" cy="244" r="5" fill="#7BC8D7"/>
+  <rect x="82" y="382" width="736" height="42" fill="#050506" stroke="#F3F1EB" stroke-opacity=".11"/>
+  <rect x="118" y="395" width="180" height="16" fill="#C6C7CC" fill-opacity=".22"/>
+  <rect x="322" y="395" width="232" height="16" fill="#6F42D8" fill-opacity=".34"/>
+  <rect x="576" y="395" width="164" height="16" fill="#C6C7CC" fill-opacity=".18"/>
+  <rect x="82" y="452" width="276" height="62" stroke="#F3F1EB" stroke-opacity=".11"/>
+  <rect x="386" y="452" width="432" height="62" stroke="#6F42D8" stroke-opacity=".22"/>
+  <text x="82" y="552" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">MOTION CUT / KEYFRAMES / TRANSITION MARKERS</text>
+</svg>

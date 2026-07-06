@@ -8,6 +8,8 @@ import {
   type Locale,
 } from "@/lib/i18n";
 
+const ogImage = "/assets/og/og-image.svg";
+
 type LocalePageProps = {
   params: Promise<{ locale: string }>;
 };
@@ -49,6 +51,20 @@ export async function generateMetadata({
       title: dictionary.meta.title,
       description: dictionary.meta.description,
       locale: rawLocale === "uk" ? "uk_UA" : "en_US",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: dictionary.meta.ogImageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dictionary.meta.title,
+      description: dictionary.meta.description,
+      images: [ogImage],
     },
   };
 }

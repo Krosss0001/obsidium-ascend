@@ -1,0 +1,16 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Identity system visual direction board</title>
+  <rect width="900" height="620" fill="#030304"/>
+  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <rect x="74" y="82" width="300" height="382" fill="#070709" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <rect x="406" y="82" width="182" height="132" fill="#050506" stroke="#6F42D8" stroke-opacity=".28"/>
+  <rect x="610" y="82" width="182" height="132" fill="#050506" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <path d="M108 132h204M108 166h162M108 236h226M108 270h172M108 304h202" stroke="#F3F1EB" stroke-opacity=".42"/>
+  <path d="M108 380h92M214 380h92M108 410h198" stroke="#6F42D8" stroke-opacity=".36"/>
+  <rect x="406" y="254" width="386" height="74" stroke="#F3F1EB" stroke-opacity=".14"/>
+  <rect x="406" y="358" width="182" height="106" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <rect x="610" y="358" width="182" height="106" stroke="#F3F1EB" stroke-opacity=".12"/>
+  <path d="M430 290h236M430 400h92M632 400h96" stroke="#C6C7CC" stroke-opacity=".38"/>
+  <path d="M430 428h118M632 428h126" stroke="#7BC8D7" stroke-opacity=".24"/>
+  <text x="74" y="520" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">VISUAL COMMAND / BRAND DIRECTION GRID</text>
+</svg>
