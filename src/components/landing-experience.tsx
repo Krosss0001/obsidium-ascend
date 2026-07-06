@@ -157,6 +157,10 @@ export function LandingExperience({
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
+  useEffect(() => {
     if (!rootRef.current || shouldReduceMotion) {
       return;
     }
@@ -521,6 +525,20 @@ export function LandingExperience({
                 <p className="eyebrow">{dictionary.brand.category}</p>
                 <h2>{dictionary.contact.headline}</h2>
                 <p>{dictionary.contact.text}</p>
+                <div className="contact-actions">
+                  <a
+                    className="private-button"
+                    href={dictionary.brand.tiktokUrl}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {dictionary.contact.tiktokCta}
+                    <ArrowUpRight aria-hidden className="size-4" />
+                  </a>
+                  <a className="ghost-button" href="#private-build-form">
+                    {dictionary.contact.button}
+                  </a>
+                </div>
                 <AssetVisual
                   className="contact-visual"
                   visual={dictionary.contact.visual}
@@ -533,6 +551,9 @@ export function LandingExperience({
                 onSubmit={(event) => {
                   event.preventDefault();
                   setIsFormSubmitted(true);
+                  requestAnimationFrame(() => {
+                    document.getElementById("private-build-success")?.focus();
+                  });
                 }}
               >
                 <div className="form-heading">
@@ -551,9 +572,9 @@ export function LandingExperience({
                             <option disabled value="">
                               {field.label}
                             </option>
-                            {dictionary.contact.form.projectTypes.map((type) => (
-                              <option key={type} value={type}>
-                                {type}
+                            {field.options.map((option) => (
+                              <option key={option} value={option}>
+                                {option}
                               </option>
                             ))}
                           </select>
@@ -587,7 +608,12 @@ export function LandingExperience({
                   <ArrowUpRight aria-hidden className="size-4" />
                 </button>
                 {isFormSubmitted ? (
-                  <p className="form-success" role="status">
+                  <p
+                    className="form-success"
+                    id="private-build-success"
+                    role="status"
+                    tabIndex={-1}
+                  >
                     {dictionary.contact.form.success}
                   </p>
                 ) : null}
@@ -623,6 +649,19 @@ export function LandingExperience({
               </a>
             ))}
           </nav>
+          <div className="footer-contact" aria-label="Contact links">
+            <a
+              href={dictionary.brand.tiktokUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {dictionary.footer.contact.tiktok}
+              <ArrowUpRight aria-hidden className="size-3.5" />
+            </a>
+            <a href={`mailto:${dictionary.brand.email}`}>
+              {dictionary.footer.contact.email}
+            </a>
+          </div>
         </div>
       </footer>
     </main>

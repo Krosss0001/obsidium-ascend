@@ -14,6 +14,14 @@
   --cyan: #7bc8d7;
   --cyan-soft: rgba(123, 200, 215, 0.12);
   --hairline: rgba(243, 241, 235, 0.11);
+  --hairline-soft: rgba(243, 241, 235, 0.08);
+  --hairline-strong: rgba(243, 241, 235, 0.18);
+  --surface-black: #020203;
+  --surface-graphite: #0d0e11;
+  --text-platinum: #f3f1eb;
+  --text-smoke: #a8a5a0;
+  --radius-sharp: 2px;
+  --radius-panel: 4px;
 }
 
 @theme inline {
@@ -79,6 +87,14 @@ a {
   text-decoration: none;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -87,6 +103,10 @@ img {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
 }
 
 .text-balance {
@@ -99,7 +119,7 @@ a {
   justify-content: space-between;
   gap: 1rem;
   border: 1px solid rgba(243, 241, 235, 0.13);
-  border-radius: 3px;
+  border-radius: var(--radius-panel);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.008)),
     rgba(3, 3, 4, 0.82);
@@ -123,7 +143,7 @@ a {
   height: 2.5rem;
   place-items: center;
   border: 1px solid rgba(198, 199, 204, 0.24);
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   background:
     linear-gradient(135deg, rgba(243, 241, 235, 0.09), rgba(243, 241, 235, 0.02)),
     #050506;
@@ -179,19 +199,27 @@ a {
   color: var(--platinum);
 }
 
+.nav-link:focus-visible,
+.language-option:focus-visible,
+.mobile-menu-link:focus-visible,
+.footer-contact a:focus-visible {
+  outline: 1px solid rgba(198, 199, 204, 0.72);
+  outline-offset: 4px;
+}
+
 .language-switch {
   display: grid;
-  grid-template-columns: repeat(2, minmax(2.1rem, 1fr));
+  grid-template-columns: repeat(2, minmax(2.25rem, 1fr));
   gap: 0.18rem;
-  border: 1px solid rgba(243, 241, 235, 0.11);
-  border-radius: 2px;
+  border: 1px solid rgba(243, 241, 235, 0.14);
+  border-radius: var(--radius-sharp);
   background: rgba(255, 255, 255, 0.025);
   padding: 0.18rem;
 }
 
 .language-option {
   display: grid;
-  min-height: 2rem;
+  min-height: 2.12rem;
   place-items: center;
   border-radius: 1px;
   color: rgba(243, 241, 235, 0.58);
@@ -214,24 +242,34 @@ a {
 .ghost-button {
   position: relative;
   display: inline-flex;
-  min-height: 3.05rem;
+  min-height: 3.12rem;
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
+  isolation: isolate;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   padding: 0.82rem 1.05rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  line-height: 1.18;
+  text-align: center;
+  user-select: none;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
     background 180ms ease,
     color 180ms ease,
     box-shadow 180ms ease;
+}
+
+.private-button svg,
+.ghost-button svg {
+  flex: 0 0 auto;
+  transition: transform 180ms ease;
 }
 
 .private-button {
@@ -248,7 +286,8 @@ a {
 .private-button::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.72), transparent);
+  z-index: -1;
+  background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.36), transparent);
   content: "";
   transform: translateX(-130%);
   transition: transform 700ms ease;
@@ -263,6 +302,21 @@ a {
 
 .private-button:hover::after {
   transform: translateX(130%);
+}
+
+.private-button:hover svg,
+.ghost-button:hover svg {
+  transform: translate(1px, -1px);
+}
+
+.private-button:focus-visible,
+.ghost-button:focus-visible,
+.menu-button:focus-visible {
+  outline: 1px solid rgba(243, 241, 235, 0.78);
+  outline-offset: 4px;
+  box-shadow:
+    0 0 0 4px rgba(111, 66, 216, 0.16),
+    0 24px 68px rgba(0, 0, 0, 0.44);
 }
 
 .private-button-compact {
@@ -288,25 +342,26 @@ a {
   height: 2.42rem;
   place-items: center;
   border: 1px solid rgba(243, 241, 235, 0.11);
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   background: rgba(255, 255, 255, 0.025);
   color: var(--platinum);
 }
 
 .mobile-menu {
   border: 1px solid rgba(243, 241, 235, 0.12);
-  border-radius: 3px;
+  border-radius: var(--radius-panel);
   background: rgba(3, 3, 4, 0.92);
   padding: 0.4rem;
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(22px);
+  animation: menu-reveal 180ms ease-out;
 }
 
 .mobile-menu-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   color: rgba(243, 241, 235, 0.72);
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -314,6 +369,18 @@ a {
   letter-spacing: 0.14em;
   padding: 0.92rem;
   text-transform: uppercase;
+}
+
+@keyframes menu-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mobile-menu-link:hover {
@@ -1538,6 +1605,19 @@ a {
   max-width: 42rem;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.65rem;
+}
+
+.contact-actions .private-button,
+.contact-actions .ghost-button {
+  min-height: 2.9rem;
+  padding-inline: 0.95rem;
+}
+
 .contact-visual {
   margin-top: 2rem;
   min-height: 18rem;
@@ -1546,12 +1626,12 @@ a {
 .build-form {
   position: relative;
   display: grid;
-  gap: 1.25rem;
+  gap: 1.35rem;
   align-self: start;
   border: 1px solid rgba(243, 241, 235, 0.16);
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.014)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.012)),
     rgba(2, 2, 3, 0.78);
   padding: 1.25rem;
   box-shadow:
@@ -1561,7 +1641,7 @@ a {
 
 .form-heading {
   border-bottom: 1px solid rgba(243, 241, 235, 0.13);
-  padding-bottom: 1.05rem;
+  padding-bottom: 1.1rem;
 }
 
 .form-heading span {
@@ -1583,7 +1663,7 @@ a {
 
 .form-grid {
   display: grid;
-  gap: 0.92rem;
+  gap: 1rem;
 }
 
 .field-group {
@@ -1605,13 +1685,13 @@ a {
 .field-group textarea {
   width: 100%;
   border: 1px solid rgba(243, 241, 235, 0.15);
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
     #040405;
   color: var(--platinum);
   font: inherit;
-  min-height: 3.18rem;
+  min-height: 3.28rem;
   outline: none;
   padding: 0.86rem 0.9rem;
   transition:
@@ -1626,12 +1706,24 @@ a {
 }
 
 .field-group select {
+  appearance: none;
+  background:
+    linear-gradient(45deg, transparent 50%, rgba(243, 241, 235, 0.72) 50%) calc(100% - 1.15rem) calc(50% - 0.12rem) / 0.42rem 0.42rem no-repeat,
+    linear-gradient(135deg, rgba(243, 241, 235, 0.72) 50%, transparent 50%) calc(100% - 0.9rem) calc(50% - 0.12rem) / 0.42rem 0.42rem no-repeat,
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
+    #040405;
   color: rgba(243, 241, 235, 0.78);
+  padding-right: 2.45rem;
 }
 
-.field-group input:focus,
-.field-group select:focus,
-.field-group textarea:focus {
+.field-group option {
+  background: #050506;
+  color: var(--platinum);
+}
+
+.field-group input:focus-visible,
+.field-group select:focus-visible,
+.field-group textarea:focus-visible {
   border-color: rgba(111, 66, 216, 0.62);
   box-shadow: 0 0 0 3px rgba(111, 66, 216, 0.12);
 }
@@ -1645,7 +1737,7 @@ a {
   position: relative;
   border: 1px solid rgba(243, 241, 235, 0.14);
   border-left-color: rgba(123, 200, 215, 0.52);
-  border-radius: 2px;
+  border-radius: var(--radius-sharp);
   background:
     linear-gradient(90deg, rgba(123, 200, 215, 0.075), transparent 36%),
     rgba(255, 255, 255, 0.024);
@@ -1661,12 +1753,18 @@ a {
   text-transform: uppercase;
 }
 
-.intake-copy .private-button {
-  margin-top: 2rem;
+.form-success:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(123, 200, 215, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .footer-shell {
-  background: #030304;
+  border-top: 1px solid rgba(243, 241, 235, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent),
+    #030304;
 }
 
 .footer-lockup {
@@ -1711,6 +1809,38 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  border: 1px solid rgba(243, 241, 235, 0.1);
+  border-radius: var(--radius-sharp);
+  color: rgba(243, 241, 235, 0.66);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  min-height: 2.25rem;
+  padding: 0.52rem 0.7rem;
+  text-transform: uppercase;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.footer-contact a:hover {
+  border-color: rgba(198, 199, 204, 0.28);
+  color: var(--platinum);
+  transform: translateY(-1px);
 }
 
 @media (min-width: 520px) {
@@ -1851,6 +1981,11 @@ a {
   }
 
   .footer-nav {
+    justify-content: flex-end;
+  }
+
+  .footer-contact {
+    grid-column: 2;
     justify-content: flex-end;
   }
 }

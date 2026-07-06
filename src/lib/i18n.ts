@@ -19,10 +19,29 @@ const projectTypes = [
   "Full Black Label Build",
 ] as const;
 
+const budgetOptions = [
+  "Starter",
+  "Growth",
+  "Premium",
+  "Black Label",
+  "Not sure yet",
+] as const;
+
+const timelineOptions = [
+  "ASAP",
+  "1–2 weeks",
+  "This month",
+  "Flexible",
+  "Not sure yet",
+] as const;
+
+// Placeholder contact channel; replace here when the final TikTok account changes.
+const tiktokUrl = "https://www.tiktok.com/@obsidium_ascend";
+
 export const dictionaries = {
   en: {
     meta: {
-      title: "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio",
+      title: "OBSIDIUM ASCEND — Black-Label Motion, Stream Design & Creator Systems",
       description:
         "Premium black-label creator systems studio for stream identity, motion assets, websites, campaigns, automation and custom software.",
       locale: "en_US",
@@ -41,6 +60,7 @@ export const dictionaries = {
       category: "Black-Label Motion & Creator Systems Studio",
       line: "Motion • Stream Identity • Websites • Campaigns • Automation • Software",
       email: "hello@obsidium.ascend",
+      tiktokUrl,
     },
     nav: {
       menuLabel: "Open navigation",
@@ -291,9 +311,10 @@ export const dictionaries = {
       ],
     },
     contact: {
-      headline: "Build the system behind your next level.",
-      text: "Tell us what you are building. We will shape the identity, motion, launch presence and technical system around it.",
-      button: "Request Private Build",
+      headline: "Ready to discuss your project?",
+      text: "Message us on TikTok or prepare a private build request. We will help define the right system for your project.",
+      button: "Prepare Private Request",
+      tiktokCta: "Message on TikTok",
       visual: {
         src: "/assets/frames/private-build-request.svg",
         alt: "Private build request dossier interface for OBSIDIUM ASCEND.",
@@ -302,15 +323,32 @@ export const dictionaries = {
         title: "Private Build Request",
         submit: "Prepare Request",
         success:
-          "Request prepared. Connect this form to email or Telegram to receive submissions.",
+          "Request prepared. We will connect delivery to TikTok, Telegram or email later.",
         projectTypes,
+        budgetOptions,
+        timelineOptions,
         fields: [
           { name: "name", label: "Name", type: "text" },
           { name: "contact", label: "Email or Telegram", type: "text" },
-          { name: "projectType", label: "Project type", type: "select" },
+          {
+            name: "projectType",
+            label: "Project type",
+            type: "select",
+            options: projectTypes,
+          },
           { name: "needs", label: "What do you need?", type: "textarea" },
-          { name: "budget", label: "Budget range", type: "text" },
-          { name: "timeline", label: "Timeline", type: "text" },
+          {
+            name: "budget",
+            label: "Budget range",
+            type: "select",
+            options: budgetOptions,
+          },
+          {
+            name: "timeline",
+            label: "Timeline",
+            type: "select",
+            options: timelineOptions,
+          },
         ],
       },
     },
@@ -325,11 +363,15 @@ export const dictionaries = {
         { href: "#protocol", label: "Protocol" },
         { href: "#contact", label: "Contact" },
       ],
+      contact: {
+        tiktok: "TikTok",
+        email: "Email",
+      },
     },
   },
   uk: {
     meta: {
-      title: "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio",
+      title: "OBSIDIUM ASCEND — Motion, Stream Design & Creator Systems",
       description:
         "Преміальна black-label студія creator systems для stream identity, motion assets, сайтів, кампаній, автоматизації та кастомного софту.",
       locale: "uk_UA",
@@ -348,6 +390,7 @@ export const dictionaries = {
       category: "Black-Label Motion & Creator Systems Studio",
       line: "Motion • Стрім-айдентика • Сайти • Кампанії • Автоматизація • Софт",
       email: "hello@obsidium.ascend",
+      tiktokUrl,
     },
     nav: {
       menuLabel: "Відкрити навігацію",
@@ -598,9 +641,10 @@ export const dictionaries = {
       ],
     },
     contact: {
-      headline: "Побудуй систему за своїм наступним рівнем.",
-      text: "Розкажи, що ти будуєш. Ми сформуємо навколо цього айдентику, motion, launch presence і technical system.",
-      button: "Замовити Private Build",
+      headline: "Готові обговорити ваш проєкт?",
+      text: "Напишіть нам у TikTok або залиште заявку. Ми допоможемо зрозуміти, який формат build підійде саме вам.",
+      button: "Залишити заявку",
+      tiktokCta: "Звʼязатися в TikTok",
       visual: {
         src: "/assets/frames/private-build-request.svg",
         alt: "Private build request dossier interface для OBSIDIUM ASCEND.",
@@ -609,15 +653,32 @@ export const dictionaries = {
         title: "Private Build Request",
         submit: "Підготувати заявку",
         success:
-          "Заявку підготовлено. Підключіть форму до email або Telegram, щоб отримувати звернення.",
+          "Заявку підготовлено. Пізніше підключимо відправку в TikTok, Telegram або email.",
         projectTypes,
+        budgetOptions,
+        timelineOptions,
         fields: [
           { name: "name", label: "Імʼя", type: "text" },
           { name: "contact", label: "Email або Telegram", type: "text" },
-          { name: "projectType", label: "Тип проєкту", type: "select" },
+          {
+            name: "projectType",
+            label: "Тип проєкту",
+            type: "select",
+            options: projectTypes,
+          },
           { name: "needs", label: "Що потрібно?", type: "textarea" },
-          { name: "budget", label: "Бюджет", type: "text" },
-          { name: "timeline", label: "Терміни", type: "text" },
+          {
+            name: "budget",
+            label: "Бюджет",
+            type: "select",
+            options: budgetOptions,
+          },
+          {
+            name: "timeline",
+            label: "Терміни",
+            type: "select",
+            options: timelineOptions,
+          },
         ],
       },
     },
@@ -632,6 +693,10 @@ export const dictionaries = {
         { href: "#protocol", label: "Протокол" },
         { href: "#contact", label: "Контакт" },
       ],
+      contact: {
+        tiktok: "TikTok",
+        email: "Email",
+      },
     },
   },
 } as const;

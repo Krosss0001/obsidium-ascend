@@ -3,9 +3,10 @@ import type { ReactNode } from "react";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import "./globals.css";
 
-const title = "OBSIDIUM ASCEND — Black-Label Motion & Creator Systems Studio";
+const title =
+  "OBSIDIUM ASCEND — Black-Label Motion, Stream Design & Creator Systems";
 const description =
-  "Premium black-label creator systems studio for stream identity, motion assets, websites, campaigns, automation and custom software.";
+  "Premium black-label studio for motion, stream design, creator systems, websites, campaigns, automation and custom software.";
 const ogImage = "/assets/og/og-image.svg";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "OBSIDIUM ASCEND",
     "black-label motion studio",
     "creator systems studio",
+    "stream design",
     "stream identity",
     "OBS setup",
     "Twitch overlays",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description:
-      "Premium creator systems for stream identity, motion assets, websites, campaigns, automation and custom software.",
+      "Premium black-label systems for stream design, motion assets, websites, campaigns, automation and custom software.",
     siteName: "OBSIDIUM ASCEND",
     type: "website",
     locale: "en_US",
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description:
-      "Premium creator systems studio for stream identity, motion assets, websites, automation and custom software.",
+      "Premium black-label creator systems studio for stream design, motion assets, websites, automation and custom software.",
     images: [ogImage],
   },
 };
@@ -65,6 +67,7 @@ export default function RootLayout({
     <html
       lang="en"
       className="h-full scroll-smooth antialiased"
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <body className="min-h-full overflow-x-hidden bg-background text-foreground">
