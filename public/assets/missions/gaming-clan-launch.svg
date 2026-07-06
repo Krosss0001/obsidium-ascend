@@ -1,1 +1,19 @@
-<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Gaming Clan Launch concept poster</title><rect width="960" height="620" fill="#030304"/><rect x="36" y="36" width="888" height="548" stroke="#F3F1EB" stroke-opacity=".1"/><rect x="78" y="86" width="450" height="368" fill="#070709" stroke="#C6C7CC" stroke-opacity=".16"/><path d="M114 140h210M114 180h156M114 262h318M114 302h242M114 342h292" stroke="#F3F1EB" stroke-opacity=".32"/><rect x="584" y="86" width="296" height="86" stroke="#6F42D8" stroke-opacity=".24"/><rect x="584" y="204" width="138" height="118" stroke="#F3F1EB" stroke-opacity=".13"/><rect x="742" y="204" width="138" height="118" stroke="#F3F1EB" stroke-opacity=".13"/><rect x="584" y="354" width="296" height="100" stroke="#F3F1EB" stroke-opacity=".13"/><path d="M620 128h148M620 260h70M778 260h58M620 400h186" stroke="#C6C7CC" stroke-opacity=".34"/><path d="M528 410h56M584 410v-96" stroke="#7BC8D7" stroke-opacity=".22"/><text x="78" y="532" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">CONCEPT SYSTEM / RECRUITMENT SITE / DISCORD STRUCTURE / LAUNCH GRID</text></svg>
+<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Gaming Clan Launch concept poster</title>
+  <defs><radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(646 190) rotate(95) scale(430 340)"><stop stop-color="#6F42D8" stop-opacity=".26"/><stop offset="1" stop-color="#030304" stop-opacity="0"/></radialGradient></defs>
+  <rect width="960" height="620" fill="#020203"/>
+  <rect width="960" height="620" fill="url(#v)"/>
+  <rect x="36" y="36" width="888" height="548" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <text x="78" y="116" fill="#C6C7CC" fill-opacity=".72" font-family="monospace" font-size="14" letter-spacing="6">CASE CONCEPT 02 / GAMING CLAN LAUNCH</text>
+  <text x="78" y="196" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="62" font-weight="900">CLAN</text>
+  <text x="78" y="258" fill="#A9AAB2" font-family="Arial Black, Arial, sans-serif" font-size="62" font-weight="900">LAUNCH</text>
+  <rect x="78" y="310" width="430" height="174" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <path d="M114 360h218M114 394h162M114 444h318" stroke="#F3F1EB" stroke-opacity=".46" stroke-width="2"/>
+  <rect x="570" y="118" width="310" height="96" fill="#050506" stroke="#6F42D8" stroke-opacity=".35"/>
+  <rect x="570" y="252" width="142" height="126" fill="#050506" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <rect x="738" y="252" width="142" height="126" fill="#050506" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <rect x="570" y="416" width="310" height="72" fill="#050506" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <path d="M608 166h154M608 314h82M774 314h62M608 458h198" stroke="#C6C7CC" stroke-opacity=".5" stroke-width="2"/>
+  <path d="M508 450h62M570 450v-104" stroke="#7BC8D7" stroke-opacity=".34" stroke-width="2"/>
+  <text x="78" y="558" fill="#C6C7CC" fill-opacity=".78" font-family="monospace" font-size="13" letter-spacing="5">RECRUITMENT SITE / DISCORD STRUCTURE / LAUNCH GRID</text>
+</svg>

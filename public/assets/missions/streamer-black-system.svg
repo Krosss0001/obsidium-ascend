@@ -1,1 +1,19 @@
-<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Streamer Black System concept poster</title><rect width="960" height="620" fill="#030304"/><rect x="36" y="36" width="888" height="548" stroke="#F3F1EB" stroke-opacity=".1"/><rect x="82" y="92" width="540" height="320" fill="#070709" stroke="#C6C7CC" stroke-opacity=".18"/><rect x="126" y="136" width="452" height="210" stroke="#6F42D8" stroke-opacity=".28"/><path d="M126 374h452M156 448h170M356 448h222" stroke="#F3F1EB" stroke-opacity=".28"/><rect x="670" y="92" width="210" height="98" stroke="#F3F1EB" stroke-opacity=".13"/><rect x="670" y="222" width="210" height="98" stroke="#F3F1EB" stroke-opacity=".13"/><rect x="670" y="352" width="210" height="60" stroke="#6F42D8" stroke-opacity=".24"/><path d="M702 138h108M702 268h132M702 386h92" stroke="#C6C7CC" stroke-opacity=".34"/><text x="82" y="532" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">CONCEPT SYSTEM / OBS SCENES / MOTION STRIPS / DISCORD SURFACE</text></svg>
+<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Streamer Black System concept poster</title>
+  <defs><radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(694 174) rotate(98) scale(430 360)"><stop stop-color="#6F42D8" stop-opacity=".32"/><stop offset="1" stop-color="#030304" stop-opacity="0"/></radialGradient></defs>
+  <rect width="960" height="620" fill="#020203"/>
+  <rect width="960" height="620" fill="url(#v)"/>
+  <rect x="36" y="36" width="888" height="548" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <text x="82" y="116" fill="#C6C7CC" fill-opacity=".72" font-family="monospace" font-size="14" letter-spacing="6">CASE CONCEPT 01 / STREAMER BLACK SYSTEM</text>
+  <text x="82" y="198" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="64" font-weight="900">STREAM</text>
+  <text x="82" y="260" fill="#A9AAB2" font-family="Arial Black, Arial, sans-serif" font-size="64" font-weight="900">SYSTEM</text>
+  <rect x="82" y="314" width="500" height="176" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".22"/>
+  <rect x="126" y="354" width="412" height="86" fill="#030304" stroke="#6F42D8" stroke-opacity=".46"/>
+  <path d="M126 462h412M160 520h168M360 520h178" stroke="#F3F1EB" stroke-opacity=".38" stroke-width="2"/>
+  <rect x="638" y="122" width="240" height="110" fill="#050506" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <rect x="638" y="266" width="240" height="110" fill="#050506" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <rect x="638" y="410" width="240" height="68" fill="#050506" stroke="#6F42D8" stroke-opacity=".32"/>
+  <path d="M676 170h118M676 314h148M676 450h108" stroke="#C6C7CC" stroke-opacity=".5" stroke-width="2"/>
+  <path d="M82 538h462" stroke="#6F42D8" stroke-opacity=".5" stroke-width="2"/>
+  <text x="82" y="562" fill="#C6C7CC" fill-opacity=".78" font-family="monospace" font-size="13" letter-spacing="5">OBS SCENES / MOTION STRIPS / DISCORD SURFACE</text>
+</svg>

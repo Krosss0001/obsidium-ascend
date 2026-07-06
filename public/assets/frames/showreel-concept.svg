@@ -1,1 +1,17 @@
-<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Showreel concept frame</title><rect width="520" height="680" fill="#030304"/><rect x="28" y="28" width="464" height="624" stroke="#F3F1EB" stroke-opacity=".11"/><path d="M90 402c64-170 210-246 338-142" stroke="#6F42D8" stroke-opacity=".45"/><path d="M90 402h286M376 402l52-142" stroke="#F3F1EB" stroke-opacity=".18"/><circle cx="90" cy="402" r="8" fill="#F3F1EB"/><circle cx="376" cy="402" r="8" fill="#6F42D8"/><circle cx="428" cy="260" r="8" fill="#7BC8D7" fill-opacity=".7"/><path d="M82 120h190M82 152h120M82 550h250" stroke="#C6C7CC" stroke-opacity=".42"/><text x="82" y="604" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">01 / CONCEPT</text></svg>
+<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Showreel concept frame</title>
+  <defs><radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(378 190) rotate(100) scale(330)"><stop stop-color="#6F42D8" stop-opacity=".32"/><stop offset="1" stop-color="#030304" stop-opacity="0"/></radialGradient></defs>
+  <rect width="520" height="680" fill="#020203"/>
+  <rect width="520" height="680" fill="url(#v)"/>
+  <rect x="28" y="28" width="464" height="624" fill="#030304" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <text x="72" y="104" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="13" letter-spacing="5">01 / CONCEPT</text>
+  <path d="M84 444c74-214 216-290 354-146" stroke="#6F42D8" stroke-opacity=".68" stroke-width="4"/>
+  <path d="M84 444h292M376 444l62-146M138 246h246" stroke="#F3F1EB" stroke-opacity=".2" stroke-width="2"/>
+  <circle cx="84" cy="444" r="9" fill="#F3F1EB"/>
+  <circle cx="376" cy="444" r="9" fill="#6F42D8"/>
+  <circle cx="438" cy="298" r="8" fill="#7BC8D7" fill-opacity=".75"/>
+  <rect x="72" y="142" width="238" height="84" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <path d="M96 176h150M96 202h92" stroke="#C6C7CC" stroke-opacity=".5" stroke-width="2"/>
+  <path d="M72 552h280" stroke="#F3F1EB" stroke-opacity=".28" stroke-width="2"/>
+  <text x="72" y="592" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="30" font-weight="900">POSITION MAP</text>
+</svg>

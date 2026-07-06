@@ -1,13 +1,28 @@
 <svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">Private build request dossier</title>
-  <rect width="760" height="560" fill="#030304"/>
-  <rect x="24" y="24" width="712" height="512" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <rect x="54" y="62" width="652" height="72" fill="#070709" stroke="#C6C7CC" stroke-opacity=".18"/>
-  <text x="78" y="104" fill="#F3F1EB" font-family="monospace" font-size="18" letter-spacing="5">PRIVATE BUILD REQUEST</text>
-  <path d="M78 178h212M78 226h282M78 274h244M78 322h302M78 370h180M78 418h260" stroke="#C6C7CC" stroke-opacity=".38"/>
-  <path d="M402 178h250M402 226h202M402 274h252M402 322h174" stroke="#6F42D8" stroke-opacity=".34"/>
-  <rect x="402" y="370" width="250" height="74" stroke="#F3F1EB" stroke-opacity=".13"/>
-  <path d="M424 410h128M424 430h178" stroke="#7BC8D7" stroke-opacity=".25"/>
-  <circle cx="636" cy="96" r="24" stroke="#F3F1EB" stroke-opacity=".26"/>
-  <path d="M624 99c-6 0-10-5-10-13s4-13 10-13 10 5 10 13-4 13-10 13Zm22 0h-7l10-26h7l10 26h-7l-1.5-4.8h-10L646 99Z" fill="#F3F1EB"/>
+  <defs>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(574 96) rotate(94) scale(340 280)">
+      <stop stop-color="#6F42D8" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#030304" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="760" height="560" fill="#020203"/>
+  <rect width="760" height="560" fill="url(#v)"/>
+  <rect x="24" y="24" width="712" height="512" fill="#030304" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <rect x="54" y="62" width="652" height="80" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".22"/>
+  <text x="78" y="100" fill="#F3F1EB" font-family="monospace" font-size="18" letter-spacing="5">PRIVATE BUILD REQUEST</text>
+  <text x="78" y="123" fill="#C6C7CC" fill-opacity=".62" font-family="monospace" font-size="9" letter-spacing="4">OBSIDIUM ASCEND / CONTROLLED INTAKE FILE</text>
+  <rect x="78" y="178" width="254" height="42" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="78" y="244" width="254" height="42" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="78" y="310" width="254" height="42" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="78" y="376" width="254" height="42" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <path d="M102 203h132M102 269h176M102 335h148M102 401h196" stroke="#C6C7CC" stroke-opacity=".52" stroke-width="2"/>
+  <rect x="402" y="178" width="250" height="42" stroke="#6F42D8" stroke-opacity=".35"/>
+  <rect x="402" y="244" width="250" height="42" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="402" y="310" width="250" height="108" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <path d="M426 203h144M426 269h104M426 340h168M426 370h126" stroke="#C6C7CC" stroke-opacity=".5" stroke-width="2"/>
+  <path d="M78 466h574" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <path d="M78 492h168M282 492h98M416 492h236" stroke="#7BC8D7" stroke-opacity=".32" stroke-width="2"/>
+  <circle cx="636" cy="102" r="24" stroke="#F3F1EB" stroke-opacity=".34" stroke-width="2"/>
+  <path d="M624 105c-6 0-10-5-10-13s4-13 10-13 10 5 10 13-4 13-10 13Zm22 0h-7l10-26h7l10 26h-7l-1.5-4.8h-10L646 105Z" fill="#F3F1EB"/>
 </svg>

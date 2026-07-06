@@ -1,1 +1,14 @@
-<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Showreel launch frame</title><rect width="520" height="680" fill="#030304"/><rect x="28" y="28" width="464" height="624" stroke="#F3F1EB" stroke-opacity=".11"/><rect x="72" y="116" width="248" height="228" stroke="#C6C7CC" stroke-opacity=".16"/><rect x="348" y="116" width="92" height="92" stroke="#6F42D8" stroke-opacity=".32"/><rect x="348" y="252" width="92" height="92" stroke="#F3F1EB" stroke-opacity=".12"/><path d="M102 168h142M102 208h170M102 278h122M102 432h300M102 474h220" stroke="#C6C7CC" stroke-opacity=".36"/><path d="M226 344v96M226 440h168" stroke="#7BC8D7" stroke-opacity=".22"/><text x="72" y="604" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">04 / LAUNCH</text></svg>
+<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Showreel launch frame</title>
+  <rect width="520" height="680" fill="#020203"/>
+  <rect x="28" y="28" width="464" height="624" fill="#030304" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <text x="72" y="104" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="13" letter-spacing="5">04 / LAUNCH</text>
+  <rect x="72" y="124" width="256" height="238" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".22"/>
+  <rect x="358" y="124" width="90" height="90" fill="#050506" stroke="#6F42D8" stroke-opacity=".42"/>
+  <rect x="358" y="262" width="90" height="100" fill="#050506" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <path d="M104 176h146M104 216h178M104 292h126M104 436h310M104 480h226" stroke="#C6C7CC" stroke-opacity=".48" stroke-width="2"/>
+  <path d="M232 362v92M232 454h168" stroke="#7BC8D7" stroke-opacity=".34" stroke-width="2"/>
+  <circle cx="232" cy="454" r="6" fill="#F3F1EB"/>
+  <circle cx="400" cy="454" r="6" fill="#6F42D8"/>
+  <text x="72" y="602" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="31" font-weight="900">PUBLIC SURFACE</text>
+</svg>

@@ -1,21 +1,29 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">OBSIDIUM ASCEND social preview</title>
   <defs>
-    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(854 302) rotate(90) scale(330 380)">
-      <stop stop-color="#6F42D8" stop-opacity=".42"/>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(850 260) rotate(92) scale(360 420)">
+      <stop stop-color="#6F42D8" stop-opacity=".48"/>
+      <stop offset=".48" stop-color="#1B102C" stop-opacity=".18"/>
       <stop offset="1" stop-color="#030304" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="metal" x1="86" y1="90" x2="560" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#D2D3D8"/>
+      <stop offset="1" stop-color="#7F828B"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="#030304"/>
+  <rect width="1200" height="630" fill="#020203"/>
   <rect width="1200" height="630" fill="url(#v)"/>
-  <path d="M54 54h1092v522H54z" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <path d="M805 105 990 74l56 64-8 366-211 34-62-68 40-365Z" fill="#040407" stroke="#C6C7CC" stroke-opacity=".42"/>
-  <path d="M990 74 1046 138l-8 366-48-62V74Z" fill="#090914" stroke="#6F42D8" stroke-opacity=".34"/>
-  <text x="86" y="180" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900">OBSIDIUM</text>
-  <text x="86" y="280" fill="#C6C7CC" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900">ASCEND</text>
-  <text x="90" y="342" fill="#C6C7CC" font-family="monospace" font-size="20" letter-spacing="6">BLACK-LABEL MOTION &amp; CREATOR SYSTEMS STUDIO</text>
-  <text x="90" y="426" fill="#F3F1EB" font-family="Arial, sans-serif" font-size="38" font-weight="700">Not a design pack. A cinematic creator system.</text>
-  <path d="M90 492h430" stroke="#6F42D8" stroke-opacity=".54"/>
-  <circle cx="1010" cy="502" r="48" stroke="#F3F1EB" stroke-opacity=".28"/>
-  <path d="M986 510c-11 0-19-8-19-22s8-22 19-22 19 8 19 22-8 22-19 22Zm40 0h-11l16-44h11l16 44h-11l-2-7h-17l-2 7Z" fill="#F3F1EB"/>
+  <path d="M54 54h1092v522H54z" fill="#030304" fill-opacity=".56" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <path d="M782 96 992 58l66 76-10 380-238 40-72-78 44-380Z" fill="#010102"/>
+  <path d="M828 126 990 94l45 56-8 334-178 32-52-60 31-330Z" fill="#08080D" stroke="#C6C7CC" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M990 94 1035 150l-8 334-39-50 2-340Z" fill="#090914" stroke="#6F42D8" stroke-opacity=".42" stroke-width="2"/>
+  <text x="86" y="176" fill="url(#metal)" font-family="Arial Black, Arial, sans-serif" font-size="98" font-weight="900">OBSIDIUM</text>
+  <text x="86" y="282" fill="#A9AAB2" font-family="Arial Black, Arial, sans-serif" font-size="98" font-weight="900">ASCEND</text>
+  <text x="90" y="348" fill="#C6C7CC" font-family="monospace" font-size="20" letter-spacing="6">BLACK-LABEL MOTION &amp; CREATOR SYSTEMS STUDIO</text>
+  <text x="90" y="428" fill="#F3F1EB" font-family="Arial, sans-serif" font-size="38" font-weight="700">Not a design pack. A cinematic creator system.</text>
+  <path d="M90 496h430" stroke="#6F42D8" stroke-opacity=".62" stroke-width="3"/>
+  <circle cx="1018" cy="502" r="50" stroke="#F3F1EB" stroke-opacity=".32" stroke-width="2"/>
+  <path d="M993 511c-12 0-20-8.5-20-23s8-23 20-23 20 8.5 20 23-8 23-20 23Zm42 0h-12l17-46h12l17 46h-12l-2.3-7.4h-17.4L1035 511Z" fill="#F3F1EB"/>
+  <text x="90" y="546" fill="#C6C7CC" fill-opacity=".64" font-family="monospace" font-size="14" letter-spacing="5">PRIVATE VISUAL DIRECTION / MOTION / WEB / AUTOMATION</text>
 </svg>

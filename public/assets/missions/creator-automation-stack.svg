@@ -1,1 +1,20 @@
-<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Creator Automation Stack concept poster</title><rect width="960" height="620" fill="#030304"/><rect x="36" y="36" width="888" height="548" stroke="#F3F1EB" stroke-opacity=".1"/><rect x="82" y="84" width="240" height="390" fill="#070709" stroke="#C6C7CC" stroke-opacity=".16"/><rect x="370" y="84" width="510" height="118" stroke="#6F42D8" stroke-opacity=".24"/><rect x="370" y="254" width="218" height="220" stroke="#F3F1EB" stroke-opacity=".12"/><rect x="640" y="254" width="240" height="220" stroke="#F3F1EB" stroke-opacity=".12"/><path d="M118 136h136M118 184h164M118 232h118M118 318h154M118 366h108M118 414h180M410 136h284M410 168h178" stroke="#F3F1EB" stroke-opacity=".32"/><circle cx="480" cy="364" r="44" stroke="#6F42D8" stroke-opacity=".36"/><circle cx="760" cy="364" r="44" stroke="#7BC8D7" stroke-opacity=".24"/><path d="M524 364h192M480 408v38M760 408v38" stroke="#C6C7CC" stroke-opacity=".2"/><text x="82" y="532" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">CONCEPT SYSTEM / BOTS / INTAKE / AI WORKFLOW / CAMPAIGN TRACKING</text></svg>
+<svg width="960" height="620" viewBox="0 0 960 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Creator Automation Stack concept poster</title>
+  <defs><radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(684 286) rotate(94) scale(430 360)"><stop stop-color="#6F42D8" stop-opacity=".28"/><stop offset="1" stop-color="#030304" stop-opacity="0"/></radialGradient></defs>
+  <rect width="960" height="620" fill="#020203"/>
+  <rect width="960" height="620" fill="url(#v)"/>
+  <rect x="36" y="36" width="888" height="548" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <text x="82" y="116" fill="#C6C7CC" fill-opacity=".72" font-family="monospace" font-size="14" letter-spacing="6">CASE CONCEPT 03 / CREATOR AUTOMATION STACK</text>
+  <text x="82" y="196" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900">CONTROL</text>
+  <text x="82" y="256" fill="#A9AAB2" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900">STACK</text>
+  <rect x="82" y="312" width="240" height="174" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <path d="M118 358h136M118 394h164M118 430h118" stroke="#F3F1EB" stroke-opacity=".46" stroke-width="2"/>
+  <rect x="370" y="118" width="510" height="120" fill="#050506" stroke="#6F42D8" stroke-opacity=".35"/>
+  <rect x="370" y="294" width="218" height="190" fill="#050506" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <rect x="640" y="294" width="240" height="190" fill="#050506" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <path d="M410 164h284M410 198h178" stroke="#F3F1EB" stroke-opacity=".46" stroke-width="2"/>
+  <circle cx="480" cy="386" r="44" stroke="#6F42D8" stroke-opacity=".55" stroke-width="3"/>
+  <circle cx="760" cy="386" r="44" stroke="#7BC8D7" stroke-opacity=".36" stroke-width="3"/>
+  <path d="M524 386h192M480 430v38M760 430v38" stroke="#C6C7CC" stroke-opacity=".28" stroke-width="2"/>
+  <text x="82" y="558" fill="#C6C7CC" fill-opacity=".78" font-family="monospace" font-size="13" letter-spacing="5">BOTS / INTAKE / AI WORKFLOW / CAMPAIGN TRACKING</text>
+</svg>

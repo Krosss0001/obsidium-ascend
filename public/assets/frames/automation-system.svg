@@ -1,16 +1,24 @@
 <svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">Automation control layer dashboard</title>
-  <rect width="900" height="620" fill="#030304"/>
-  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
-  <rect x="76" y="84" width="252" height="392" fill="#070709" stroke="#C6C7CC" stroke-opacity=".16"/>
-  <rect x="374" y="84" width="450" height="144" fill="#050506" stroke="#6F42D8" stroke-opacity=".24"/>
-  <rect x="374" y="270" width="202" height="206" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <rect x="622" y="270" width="202" height="206" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <path d="M110 134h142M110 176h176M110 218h120M110 302h168M110 344h132M110 386h184" stroke="#F3F1EB" stroke-opacity=".32"/>
-  <path d="M418 132h330M418 164h206" stroke="#C6C7CC" stroke-opacity=".32"/>
-  <circle cx="474" cy="374" r="42" stroke="#6F42D8" stroke-opacity=".42"/>
-  <circle cx="724" cy="374" r="42" stroke="#7BC8D7" stroke-opacity=".24"/>
-  <path d="M516 374h166M474 416v38M724 416v38" stroke="#F3F1EB" stroke-opacity=".14"/>
-  <path d="M430 454h90M680 454h90" stroke="#C6C7CC" stroke-opacity=".34"/>
-  <text x="76" y="536" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">CONTROL LAYER / BOTS / DASHBOARD / WORKFLOW</text>
+  <defs>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 318) rotate(90) scale(360 360)">
+      <stop stop-color="#6F42D8" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#030304" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="620" fill="#020203"/>
+  <rect width="900" height="620" fill="url(#v)"/>
+  <rect x="32" y="32" width="836" height="556" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <rect x="76" y="84" width="252" height="398" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".22"/>
+  <rect x="374" y="84" width="450" height="148" fill="#050506" stroke="#6F42D8" stroke-opacity=".34"/>
+  <rect x="374" y="276" width="202" height="206" fill="#050506" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <rect x="622" y="276" width="202" height="206" fill="#050506" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <path d="M110 136h142M110 180h176M110 224h120M110 310h168M110 354h132M110 398h184" stroke="#F3F1EB" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M418 134h330M418 168h206" stroke="#C6C7CC" stroke-opacity=".46" stroke-width="2"/>
+  <circle cx="474" cy="378" r="46" stroke="#6F42D8" stroke-opacity=".58" stroke-width="3"/>
+  <circle cx="724" cy="378" r="46" stroke="#7BC8D7" stroke-opacity=".34" stroke-width="3"/>
+  <path d="M520 378h158M474 424v38M724 424v38" stroke="#F3F1EB" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M430 462h90M680 462h90" stroke="#C6C7CC" stroke-opacity=".48" stroke-width="2"/>
+  <rect x="106" y="442" width="186" height="18" fill="#6F42D8" fill-opacity=".32"/>
+  <text x="76" y="544" fill="#C6C7CC" fill-opacity=".76" font-family="monospace" font-size="14" letter-spacing="5">CONTROL LAYER / BOTS / DASHBOARD / WORKFLOW</text>
 </svg>

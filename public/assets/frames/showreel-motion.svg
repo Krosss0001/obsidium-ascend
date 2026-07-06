@@ -1,1 +1,15 @@
-<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Showreel motion frame</title><rect width="520" height="680" fill="#030304"/><rect x="28" y="28" width="464" height="624" stroke="#F3F1EB" stroke-opacity=".11"/><rect x="72" y="132" width="376" height="250" stroke="#C6C7CC" stroke-opacity=".16"/><path d="M112 266c60-74 106 64 176-8 54-55 98-48 154 20" stroke="#6F42D8" stroke-opacity=".58"/><path d="M92 456h120M232 456h176M92 498h260" stroke="#F3F1EB" stroke-opacity=".26"/><rect x="92" y="522" width="300" height="16" fill="#6F42D8" fill-opacity=".28"/><text x="72" y="604" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">03 / MOTION</text></svg>
+<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Showreel motion frame</title>
+  <rect width="520" height="680" fill="#020203"/>
+  <rect x="28" y="28" width="464" height="624" fill="#030304" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <text x="72" y="104" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="13" letter-spacing="5">03 / MOTION</text>
+  <rect x="72" y="132" width="376" height="260" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <path d="M104 268c68-92 116 64 188-14 58-62 104-50 158 24" stroke="#6F42D8" stroke-opacity=".72" stroke-width="4"/>
+  <path d="M104 268h344M156 160v192M260 160v192M364 160v192" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <circle cx="104" cy="268" r="7" fill="#F3F1EB"/>
+  <circle cx="292" cy="254" r="7" fill="#F3F1EB"/>
+  <circle cx="450" cy="278" r="7" fill="#7BC8D7"/>
+  <rect x="92" y="452" width="328" height="20" fill="#6F42D8" fill-opacity=".42"/>
+  <path d="M92 424h122M240 424h178M92 500h260" stroke="#F3F1EB" stroke-opacity=".36" stroke-width="2"/>
+  <text x="72" y="602" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="31" font-weight="900">CUT RHYTHM</text>
+</svg>

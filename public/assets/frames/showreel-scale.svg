@@ -1,1 +1,13 @@
-<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title"><title id="title">Showreel scale frame</title><rect width="520" height="680" fill="#030304"/><rect x="28" y="28" width="464" height="624" stroke="#F3F1EB" stroke-opacity=".11"/><rect x="72" y="118" width="376" height="116" stroke="#6F42D8" stroke-opacity=".26"/><rect x="72" y="276" width="150" height="190" stroke="#F3F1EB" stroke-opacity=".12"/><rect x="270" y="276" width="178" height="190" stroke="#F3F1EB" stroke-opacity=".12"/><circle cx="147" cy="370" r="34" stroke="#7BC8D7" stroke-opacity=".25"/><circle cx="359" cy="370" r="34" stroke="#6F42D8" stroke-opacity=".36"/><path d="M181 370h144M147 404v42M359 404v42M102 166h230M102 198h156" stroke="#C6C7CC" stroke-opacity=".32"/><text x="72" y="604" fill="#C6C7CC" font-family="monospace" font-size="14" letter-spacing="5">05 / SCALE</text></svg>
+<svg width="520" height="680" viewBox="0 0 520 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Showreel scale frame</title>
+  <rect width="520" height="680" fill="#020203"/>
+  <rect x="28" y="28" width="464" height="624" fill="#030304" stroke="#F3F1EB" stroke-opacity=".16"/>
+  <text x="72" y="104" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="13" letter-spacing="5">05 / SCALE</text>
+  <rect x="72" y="126" width="376" height="122" fill="#070709" stroke="#6F42D8" stroke-opacity=".34"/>
+  <rect x="72" y="292" width="154" height="194" fill="#050506" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="278" y="292" width="170" height="194" fill="#050506" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <circle cx="149" cy="388" r="38" stroke="#7BC8D7" stroke-opacity=".42" stroke-width="3"/>
+  <circle cx="363" cy="388" r="38" stroke="#6F42D8" stroke-opacity=".58" stroke-width="3"/>
+  <path d="M187 388h138M149 426v42M363 426v42M104 174h230M104 206h156" stroke="#C6C7CC" stroke-opacity=".42" stroke-width="2"/>
+  <text x="72" y="602" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="31" font-weight="900">CONTROL LAYER</text>
+</svg>

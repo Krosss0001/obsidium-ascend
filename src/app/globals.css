@@ -763,14 +763,14 @@ a {
   isolation: isolate;
   overflow: hidden;
   min-height: 18rem;
-  border: 1px solid rgba(243, 241, 235, 0.12);
+  border: 1px solid rgba(243, 241, 235, 0.16);
   border-radius: 2px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.01)),
     #050506;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.065),
-    0 28px 70px rgba(0, 0, 0, 0.28);
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 30px 80px rgba(0, 0, 0, 0.34);
 }
 
 .asset-frame::before,
@@ -784,8 +784,8 @@ a {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.42), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.24)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.055), transparent 18%, rgba(0, 0, 0, 0.2));
+    linear-gradient(90deg, rgba(0, 0, 0, 0.2), transparent 30%, transparent 72%, rgba(0, 0, 0, 0.16)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 22%, rgba(0, 0, 0, 0.1));
   mix-blend-mode: soft-light;
 }
 
@@ -793,7 +793,7 @@ a {
   inset: -30% auto -30% -62%;
   z-index: 2;
   width: 44%;
-  background: linear-gradient(90deg, transparent, rgba(243, 241, 235, 0.08), transparent);
+  background: linear-gradient(90deg, transparent, rgba(243, 241, 235, 0.06), transparent);
   transform: skewX(-14deg);
   transition: transform 900ms ease;
 }
@@ -809,7 +809,7 @@ a {
   height: 100%;
   min-height: inherit;
   object-fit: cover;
-  opacity: 0.94;
+  opacity: 1;
   transform: scale(1.002);
 }
 
@@ -1112,7 +1112,7 @@ a {
   position: absolute;
   inset: 2.25rem 0.95rem 5rem;
   overflow: hidden;
-  border: 1px solid rgba(243, 241, 235, 0.08);
+  border: 1px solid rgba(243, 241, 235, 0.12);
   border-radius: 1px;
   background:
     radial-gradient(circle at 50% 42%, rgba(111, 66, 216, 0.15), transparent 55%),
@@ -1125,8 +1125,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.42)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.26), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.28));
+    linear-gradient(180deg, transparent 62%, rgba(0, 0, 0, 0.24)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.12), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.14));
   content: "";
 }
 
@@ -1134,7 +1134,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 1;
   transition:
     opacity 220ms ease,
     transform 420ms ease;
@@ -1546,20 +1546,22 @@ a {
 .build-form {
   position: relative;
   display: grid;
-  gap: 1.1rem;
+  gap: 1.25rem;
   align-self: start;
-  border: 1px solid rgba(243, 241, 235, 0.12);
+  border: 1px solid rgba(243, 241, 235, 0.16);
   border-radius: 2px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.012)),
-    rgba(2, 2, 3, 0.68);
-  padding: 1.1rem;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.014)),
+    rgba(2, 2, 3, 0.78);
+  padding: 1.25rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 26px 70px rgba(0, 0, 0, 0.24);
 }
 
 .form-heading {
-  border-bottom: 1px solid rgba(243, 241, 235, 0.1);
-  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(243, 241, 235, 0.13);
+  padding-bottom: 1.05rem;
 }
 
 .form-heading span {
@@ -1574,14 +1576,14 @@ a {
 .form-heading h3 {
   margin-top: 0.5rem;
   color: var(--platinum);
-  font-size: 1.45rem;
+  font-size: 1.58rem;
   font-weight: 800;
   line-height: 1.05;
 }
 
 .form-grid {
   display: grid;
-  gap: 0.82rem;
+  gap: 0.92rem;
 }
 
 .field-group {
@@ -1602,16 +1604,16 @@ a {
 .field-group select,
 .field-group textarea {
   width: 100%;
-  border: 1px solid rgba(243, 241, 235, 0.12);
+  border: 1px solid rgba(243, 241, 235, 0.15);
   border-radius: 2px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012)),
-    #050506;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
+    #040405;
   color: var(--platinum);
   font: inherit;
-  min-height: 3rem;
+  min-height: 3.18rem;
   outline: none;
-  padding: 0.78rem 0.82rem;
+  padding: 0.86rem 0.9rem;
   transition:
     border-color 180ms ease,
     background 180ms ease,
@@ -1619,7 +1621,7 @@ a {
 }
 
 .field-group textarea {
-  min-height: 8rem;
+  min-height: 8.6rem;
   resize: vertical;
 }
 
@@ -1640,10 +1642,14 @@ a {
 }
 
 .form-success {
-  border: 1px solid rgba(123, 200, 215, 0.16);
+  position: relative;
+  border: 1px solid rgba(243, 241, 235, 0.14);
+  border-left-color: rgba(123, 200, 215, 0.52);
   border-radius: 2px;
-  background: rgba(123, 200, 215, 0.045);
-  color: rgba(243, 241, 235, 0.72) !important;
+  background:
+    linear-gradient(90deg, rgba(123, 200, 215, 0.075), transparent 36%),
+    rgba(255, 255, 255, 0.024);
+  color: rgba(243, 241, 235, 0.82) !important;
   font-family: var(--font-mono);
   font-size: 0.68rem !important;
   font-weight: 800;
@@ -1651,7 +1657,7 @@ a {
   line-height: 1.7 !important;
   margin-top: 0 !important;
   max-width: none !important;
-  padding: 0.8rem;
+  padding: 0.92rem 1rem;
   text-transform: uppercase;
 }
 

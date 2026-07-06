@@ -1,16 +1,26 @@
 <svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">Identity system visual direction board</title>
-  <rect width="900" height="620" fill="#030304"/>
-  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
-  <rect x="74" y="82" width="300" height="382" fill="#070709" stroke="#C6C7CC" stroke-opacity=".2"/>
-  <rect x="406" y="82" width="182" height="132" fill="#050506" stroke="#6F42D8" stroke-opacity=".28"/>
-  <rect x="610" y="82" width="182" height="132" fill="#050506" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <path d="M108 132h204M108 166h162M108 236h226M108 270h172M108 304h202" stroke="#F3F1EB" stroke-opacity=".42"/>
-  <path d="M108 380h92M214 380h92M108 410h198" stroke="#6F42D8" stroke-opacity=".36"/>
-  <rect x="406" y="254" width="386" height="74" stroke="#F3F1EB" stroke-opacity=".14"/>
-  <rect x="406" y="358" width="182" height="106" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <rect x="610" y="358" width="182" height="106" stroke="#F3F1EB" stroke-opacity=".12"/>
-  <path d="M430 290h236M430 400h92M632 400h96" stroke="#C6C7CC" stroke-opacity=".38"/>
-  <path d="M430 428h118M632 428h126" stroke="#7BC8D7" stroke-opacity=".24"/>
-  <text x="74" y="520" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">VISUAL COMMAND / BRAND DIRECTION GRID</text>
+  <defs>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(674 150) rotate(95) scale(420 320)">
+      <stop stop-color="#6F42D8" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#030304" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="620" fill="#020203"/>
+  <rect width="900" height="620" fill="url(#v)"/>
+  <rect x="32" y="32" width="836" height="556" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <rect x="72" y="78" width="312" height="410" fill="#09090D" stroke="#C6C7CC" stroke-opacity=".24"/>
+  <text x="108" y="150" fill="#F3F1EB" font-family="Arial Black, Arial, sans-serif" font-size="48" font-weight="900">OA</text>
+  <path d="M108 196h214M108 228h158M108 284h226M108 316h184M108 348h210" stroke="#F3F1EB" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="108" y="396" width="84" height="54" fill="#111018" stroke="#6F42D8" stroke-opacity=".55"/>
+  <rect x="214" y="396" width="84" height="54" fill="#08080C" stroke="#F3F1EB" stroke-opacity=".2"/>
+  <path d="M108 520h246" stroke="#6F42D8" stroke-opacity=".46" stroke-width="2"/>
+  <rect x="432" y="78" width="168" height="138" fill="#070709" stroke="#6F42D8" stroke-opacity=".34"/>
+  <rect x="628" y="78" width="168" height="138" fill="#050506" stroke="#F3F1EB" stroke-opacity=".18"/>
+  <rect x="432" y="258" width="364" height="92" fill="#070709" stroke="#F3F1EB" stroke-opacity=".17"/>
+  <rect x="432" y="392" width="168" height="96" fill="#050506" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <rect x="628" y="392" width="168" height="96" fill="#050506" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <path d="M462 128h84M462 158h108M658 128h82M658 158h64M462 304h236M462 438h82M658 438h96" stroke="#C6C7CC" stroke-opacity=".5" stroke-width="2"/>
+  <path d="M462 328h164M462 462h112M658 462h116" stroke="#7BC8D7" stroke-opacity=".32" stroke-width="2"/>
+  <text x="72" y="552" fill="#C6C7CC" fill-opacity=".76" font-family="monospace" font-size="14" letter-spacing="5">VISUAL COMMAND / BRAND DIRECTION GRID</text>
 </svg>

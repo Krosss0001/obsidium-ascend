@@ -1,18 +1,26 @@
 <svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">Motion production timeline system</title>
-  <rect width="900" height="620" fill="#030304"/>
-  <rect x="32" y="32" width="836" height="556" stroke="#F3F1EB" stroke-opacity=".1"/>
-  <rect x="82" y="84" width="736" height="248" fill="#070709" stroke="#C6C7CC" stroke-opacity=".15"/>
-  <path d="M114 208h672M178 116v184M306 116v184M434 116v184M562 116v184M690 116v184" stroke="#F3F1EB" stroke-opacity=".08"/>
-  <path d="M146 232c76-102 154 72 236-16 74-80 150-54 252 28" stroke="#6F42D8" stroke-opacity=".64"/>
-  <circle cx="146" cy="232" r="5" fill="#F3F1EB"/>
-  <circle cx="382" cy="216" r="5" fill="#F3F1EB"/>
-  <circle cx="634" cy="244" r="5" fill="#7BC8D7"/>
-  <rect x="82" y="382" width="736" height="42" fill="#050506" stroke="#F3F1EB" stroke-opacity=".11"/>
-  <rect x="118" y="395" width="180" height="16" fill="#C6C7CC" fill-opacity=".22"/>
-  <rect x="322" y="395" width="232" height="16" fill="#6F42D8" fill-opacity=".34"/>
-  <rect x="576" y="395" width="164" height="16" fill="#C6C7CC" fill-opacity=".18"/>
-  <rect x="82" y="452" width="276" height="62" stroke="#F3F1EB" stroke-opacity=".11"/>
-  <rect x="386" y="452" width="432" height="62" stroke="#6F42D8" stroke-opacity=".22"/>
-  <text x="82" y="552" fill="#C6C7CC" fill-opacity=".7" font-family="monospace" font-size="14" letter-spacing="5">MOTION CUT / KEYFRAMES / TRANSITION MARKERS</text>
+  <defs>
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(454 228) rotate(90) scale(330 420)">
+      <stop stop-color="#6F42D8" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#030304" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="620" fill="#020203"/>
+  <rect width="900" height="620" fill="url(#v)"/>
+  <rect x="32" y="32" width="836" height="556" fill="#030304" stroke="#F3F1EB" stroke-opacity=".15"/>
+  <rect x="82" y="82" width="736" height="270" fill="#08080C" stroke="#C6C7CC" stroke-opacity=".2"/>
+  <path d="M114 218h672M178 120v198M306 120v198M434 120v198M562 120v198M690 120v198" stroke="#F3F1EB" stroke-opacity=".1"/>
+  <path d="M134 254c82-126 156 72 248-28 84-92 178-62 314 38" stroke="#6F42D8" stroke-opacity=".72" stroke-width="4"/>
+  <path d="M134 254c82-126 156 72 248-28 84-92 178-62 314 38" stroke="#F3F1EB" stroke-opacity=".22" stroke-width="1"/>
+  <circle cx="134" cy="254" r="8" fill="#F3F1EB"/>
+  <circle cx="382" cy="226" r="8" fill="#F3F1EB"/>
+  <circle cx="696" cy="264" r="8" fill="#7BC8D7"/>
+  <rect x="82" y="392" width="736" height="50" fill="#050506" stroke="#F3F1EB" stroke-opacity=".14"/>
+  <rect x="118" y="407" width="178" height="20" fill="#C6C7CC" fill-opacity=".28"/>
+  <rect x="320" y="407" width="244" height="20" fill="#6F42D8" fill-opacity=".46"/>
+  <rect x="588" y="407" width="166" height="20" fill="#C6C7CC" fill-opacity=".22"/>
+  <rect x="82" y="472" width="276" height="62" fill="#040406" stroke="#F3F1EB" stroke-opacity=".14"/>
+  <rect x="386" y="472" width="432" height="62" fill="#040406" stroke="#6F42D8" stroke-opacity=".3"/>
+  <text x="82" y="560" fill="#C6C7CC" fill-opacity=".76" font-family="monospace" font-size="14" letter-spacing="5">MOTION CUT / KEYFRAMES / TRANSITION MARKERS</text>
 </svg>
