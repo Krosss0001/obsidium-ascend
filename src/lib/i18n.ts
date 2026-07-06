@@ -373,7 +373,7 @@ export const dictionaries = {
     meta: {
       title: "OBSIDIUM ASCEND — Motion, Stream Design & Creator Systems",
       description:
-        "Преміальна black-label студія creator systems для stream identity, motion assets, сайтів, кампаній, автоматизації та кастомного софту.",
+        "Преміальна black-label студія creator systems для stream identity, motion-матеріалів, сайтів, кампаній, автоматизації та кастомного софту.",
       locale: "uk_UA",
       ogImageAlt:
         "Превʼю OBSIDIUM ASCEND: black-label motion і creator systems studio.",
@@ -396,7 +396,7 @@ export const dictionaries = {
       menuLabel: "Відкрити навігацію",
       closeLabel: "Закрити навігацію",
       languageLabel: "Мова",
-      cta: "Замовити Build",
+      cta: "Замовити",
       items: [
         { href: "#studio", label: "Студія" },
         { href: "#systems", label: "Системи" },
@@ -410,9 +410,9 @@ export const dictionaries = {
       eyebrow: "Black-Label Motion & Creator Systems Studio",
       title: "OBSIDIUM ASCEND",
       titleParts: ["OBSIDIUM", "ASCEND"],
-      headline: "Кінематична операційна система для серйозних креаторів.",
+      headline: "Кінематична система для серйозних креаторів.",
       subtitle:
-        "Private visual direction, motion production, launch presence і technical tooling для creator-брендів, які мають виглядати авторськи, а не зібрано з шаблонів.",
+        "Private visual direction, motion production, launch presence і технічна база для проєктів, які мають виглядати авторськи, а не зібраними з шаблонів.",
       primary: "Замовити Private Build",
       secondary: "Переглянути системи",
       studioCode: "Private build / motion direction / launch architecture",
@@ -420,19 +420,19 @@ export const dictionaries = {
       posterAlt: "Обсидіановий моноліт-постер OBSIDIUM ASCEND.",
     },
     credibility: {
-      text: "Створено для креаторів, стрімерів, gaming-кланів і digital-брендів, які виросли з окремих assets і потребують цілісної studio system.",
+      text: "Створено для креаторів, стрімерів, gaming-кланів і digital-брендів, які переросли окремі макети та потребують цілісної системи.",
       pillars: ["Айдентика", "Motion", "Запуск", "Системи"],
     },
     systems: {
       title: "Системи за образом",
       subtitle:
-        "Кожен build поєднує видиму поверхню бренду з production layer, який робить її повторюваною.",
+        "Кожен build поєднує видиму подачу бренду з процесом, який легко повторювати й масштабувати.",
       panels: [
         {
           number: "01",
           label: "Visual Command",
           title: "Identity Direction",
-          text: "Black-label візуальна мова для каналу, клану, продукту або personal brand: типографіка, тон, overlays, interface rules і presence.",
+          text: "Black-label візуальна мова для каналу, клану, продукту або personal brand: типографіка, тон, overlays, правила інтерфейсу і присутність.",
           deliverable: "Brand direction, stream kit, interface grammar",
           mockup: "obs",
           visual: {
@@ -444,7 +444,7 @@ export const dictionaries = {
           number: "02",
           label: "Motion Cut",
           title: "Motion Production",
-          text: "Stingers, анімовані marks, transitions, intros і promo assets як одна стримана cinematic motion-мова.",
+          text: "Stingers, анімовані marks, transitions, intros і promo-матеріали як одна стримана cinematic motion-мова.",
           deliverable: "Timeline logic, motion package, launch edits",
           mockup: "timeline",
           visual: {
@@ -468,7 +468,7 @@ export const dictionaries = {
           number: "04",
           label: "Control Layer",
           title: "Automation Layer",
-          text: "Боти, dashboards, lead flows і custom internal tools, які перетворюють бренд на operating system після запуску.",
+          text: "Боти, dashboards, lead flows і custom internal tools, які після запуску збирають бренд у керовану систему роботи.",
           deliverable: "Dashboards, automations, assistant workflows",
           mockup: "automation",
           visual: {
@@ -521,7 +521,7 @@ export const dictionaries = {
         {
           number: "05",
           label: "Scale",
-          text: "Automation та iteration layer.",
+          text: "Автоматизація та покращення.",
           visual: {
             src: "/assets/frames/showreel-scale.svg",
             alt: "Scale frame з analytics controls і automation nodes.",
@@ -580,9 +580,9 @@ export const dictionaries = {
     blackLabel: {
       eyebrow: "Private Studio",
       title: "Black Label Builds",
-      text: "Для креаторів і брендів, яким потрібна повна private production: айдентика, motion, сайт, launch assets і custom tools як один build.",
-      note: "Обмежені production windows. Без template packages. Кожна система створюється під ринок, формат і technical stack креатора.",
-      button: "Замовити Build",
+      text: "Для креаторів і брендів, яким потрібна повна private production: айдентика, motion, сайт, launch-матеріали і custom tools як один build.",
+      note: "Обмежені production windows. Без template packages. Кожна система створюється під ринок, формат і технічний стек креатора.",
+      button: "Замовити",
       visual: {
         src: "/assets/brand/black-label-system.svg",
         alt: "Private black-label build dossier із platinum lines і violet rim light.",
@@ -615,28 +615,28 @@ export const dictionaries = {
       steps: [
         {
           number: "01",
-          title: "Diagnose",
-          text: "Визначаємо gap між тим, як проєкт виглядає, як працює і як має сприйматись.",
+          title: "Аналіз",
+          text: "Визначаємо розрив між тим, як проєкт виглядає, як працює і як має сприйматись.",
         },
         {
           number: "02",
-          title: "Direct",
-          text: "Фіксуємо visual direction, motion rules, launch structure і technical architecture до production.",
+          title: "Напрям",
+          text: "Фіксуємо visual direction, motion rules, launch structure і технічну архітектуру до production.",
         },
         {
           number: "03",
-          title: "Produce",
-          text: "Створюємо identity, stream assets, сайт, motion kit і tools як одну систему.",
+          title: "Продакшен",
+          text: "Створюємо identity, stream-пакет, сайт, motion kit і tools як одну систему.",
         },
         {
           number: "04",
           title: "Launch",
-          text: "Пакуємо public surface: campaign assets, community flow, content cues і release sequence.",
+          text: "Пакуємо public surface: campaign-матеріали, community flow, content cues і release sequence.",
         },
         {
           number: "05",
-          title: "Operate",
-          text: "Покращуємо систему через analytics, automation, нові assets і technical upgrades.",
+          title: "Розвиток",
+          text: "Покращуємо систему через analytics, automation, нові матеріали і технічні апгрейди.",
         },
       ],
     },
